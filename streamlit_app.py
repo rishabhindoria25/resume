@@ -95,7 +95,7 @@ def txt4(a, b, c):
     st.markdown(c)
 
 #####################
-
+st.markdown("""---""")
 st.markdown('''
 ## Career-snapshot
 ''')
@@ -106,6 +106,7 @@ with st.spinner(text="Building line"):
         timeline(data, height=500)
 
 #####################
+st.markdown("""---""")
 st.markdown('''
 ## Education
 ''')
@@ -120,6 +121,7 @@ txt('**Bachelors of Technology** (Information Technology), *Manipal Institute of
 '2013-2017')
 
 #####################
+st.markdown("""---""")
 st.markdown('''
 ## Skills
 ''')
@@ -132,6 +134,7 @@ txt3('CI/CD', '`Git`, `Jenkins`, `Jira`, `XL-Deploy`')
 txt3('Data Visualization', '`Grafana`, `Chart.js`, `Tableau`, `PowerBI`')
 
 #####################
+st.markdown("""---""")
 st.markdown('''
 ## Work Experience
 ''')
@@ -155,6 +158,7 @@ st.markdown('''
 ''')
 
 #####################
+st.markdown("""---""")
 st.markdown('''
 ## Projects
 ''')
@@ -195,9 +199,27 @@ st.markdown('''
 
 
 #####################
+st.markdown("""---""")
 st.markdown('''
 ## Social Media
 ''')
 txt2('LinkedIn', 'https://www.linkedin.com/in/rishabhindoria/')
 txt2('GitHub', 'https://github.com/rishabhindoria25/')
 txt2('Kaggle', 'https://www.kaggle.com/rishabhindoria')
+
+#####################
+st.markdown("""---""")
+st.header(":mailbox: Get In Touch With Me!")
+
+
+contact_form = """
+<form action="https://formsubmit.co/indoriarishabh25@gmail.com" method="POST">
+     <input type="hidden" name="_captcha" value="false">
+     <input type="text" name="name" placeholder="Your name" required>
+     <input type="email" name="email" placeholder="Your email" required>
+     <textarea name="message" placeholder="Your message here"></textarea>
+     <button type="submit">Send</button>
+</form>
+"""
+
+st.markdown(contact_form, unsafe_allow_html=True)
