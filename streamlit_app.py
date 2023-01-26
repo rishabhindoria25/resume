@@ -23,9 +23,7 @@ st.image(image, width=150)
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
 HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?
-- Experienced Educator, Researcher and Administrator with almost twenty years of experience in data-oriented environment and a passion for delivering insights based on predictive modeling. 
-- Strong verbal and written communication skills as demonstrated by extensive participation as invited speaker at `10` conferences as well as publishing 149 research articles.
-- Strong track record in scholarly research with H-index of `32` and total citation of 3200+.
+\nI am a highly accomplished scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. I am highly motivated to innovate existing business processes and to achieve optimal results in an efficient and cost-effective manner, utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and a commitment to excellence in both my coursework and various tasks. I am eager to continue this level of performance in the future, utilizing diverse models, frameworks, and data.
 ''')
 
 #####################
