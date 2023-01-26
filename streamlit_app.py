@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_timeline import timeline
 from PIL import Image
-image = Image.open("https://raw.githubusercontent.com/rishabhindoria25/resume/main/images/icon.jpg")
+image = Image.open("images\icon.jpg")
 
 PAGE_CONFIG = {"page_title":"Rishabh Indoria", 
                "page_icon":image, 
@@ -17,7 +17,7 @@ st.write('''
 # Rishabh Indoria, THE IT CROWD
 ''')
 
-image = Image.open('https://raw.githubusercontent.com/rishabhindoria25/resume/main/images/dp.png')
+image = Image.open('images\dp.png')
 st.image(image, width=150)
 
 st.markdown('## Summary', unsafe_allow_html=True)
