@@ -57,6 +57,9 @@ st.markdown("""
       <li class="nav-item">
         <a class="nav-link" href="#social-media">Social Media</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-me">Contact Me</a>
+      </li>
     </ul>
   </div>
 </nav>
@@ -209,7 +212,7 @@ txt2('Kaggle', 'https://www.kaggle.com/rishabhindoria')
 
 #####################
 st.markdown("""---""")
-st.header(":mailbox: Get In Touch With Me!")
+st.header("Contact Me")
 
 
 contact_form = """
