@@ -1,6 +1,12 @@
 import streamlit as st
 from streamlit_timeline import timeline
 from PIL import Image
+image = Image.open("icon.jpg")
+
+PAGE_CONFIG = {"page_title":"Rishabh Indoria", 
+               "page_icon":image, 
+               "layout":"centered", 
+               "initial_sidebar_state":"auto"}
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
