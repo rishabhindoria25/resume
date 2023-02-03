@@ -32,7 +32,7 @@
 		},
 		"media": {
 			"url": "https://raw.githubusercontent.com/rishabhindoria25/resume/main/accident.jpg",
-			"credit": "credits: A stray dog"
+			"credit": "courtesy: A stray dog"
 		},
 		"text": {
 			"headline": "Met with an accident",
@@ -45,12 +45,11 @@
 		},
 		"media": {
 			"url": "https://urja.io/images/logo.png",
-			"caption": "Urja.io",
 			"credit": "Urja.io"
 		},
 		"text": {
 			"headline": "Move to a startup",
-			"text": "After working at an MNC, I realised i needed more accountability and a fast paced environment.I got my chance at Urja.io as a Data Engineer/Scientist role."
+			"text": "After working at an MNC, I realised, I needed more accountability and a fast paced environment.I got my chance at Urja.io as a Data Engineer/Scientist role."
 		}
 	}, {
 		"start_date": {
