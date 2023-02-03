@@ -185,7 +185,7 @@ st.markdown('''
 txt("**<span style='color:#000000'>Image Feature Comparison and Ranking, under Dr. Ajitha Shenoy</span>**, <span style='color:#000000'>Manipal Institute of Technology</span>, India",
 'Jan 2017- Jun 2017')
 st.markdown('''
-- Extracted features from query image stored in <span style='color:#000000'>AWS s3</span>. Compared and matched the <span style='color:#000000'>SURF</span> features and returned top 10 matching images with an accuracy of <span style='color:#000000'>95.7%</span>. The developed model was immune to image rotation
+- Extracted features from query image stored in <span style='color:#000000'>AWS s3</span>. Compared and matched the <span style='color:#000000'>SURF</span> features and returned top 10 matching images with an accuracy of <span style='color:#000000'>92.7%</span>. The developed model was immune to image rotation
 - This tool is used by Manipal Institute of Technology for library catalogue management, saving <span style='color:#000000'>1.5</span> hours of librarian everyday
 ''', unsafe_allow_html=True)
 
