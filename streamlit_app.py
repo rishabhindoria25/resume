@@ -137,7 +137,7 @@ st.markdown('''
 txt("**<span style='color:#000000'>Lead Data Scientist</span>**, *<span style='color:#000000'>Urja.io</span>*, India",
 '2021-2022')
 st.markdown('''
-- Developed model using <span style='color:#000000'>unsupervised K-means clustering</span> and <span style='color:#000000'>fbprophet</span> to forecast machine maintenance using peak detection and <span style='color:#000000'>Time-series Data</span>. Achieved <span style='color:#000000'>97%</span> accuracy
+- Developed model using <span style='color:#000000' style='font-weight:bold'>unsupervised K-means clustering</span> and <span style='color:#000000'>fbprophet</span> to forecast machine maintenance using peak detection and <span style='color:#000000'>Time-series Data</span>. Achieved <span style='color:#000000'>97%</span> accuracy
 - Engineered a data ingestion pipeline that utilized <span style='color:#000000'>AWS IoT Core, InfluxDB, and Telegraf</span> to ingest real-time time-series data sent by 2,000 IoT devices. Thus, reducing data loss to <span style='color:#000000'>1%</span>
 - Designed a parallel channel for data ingestion via HTTP chunked protocol and Telegraf directory monitoring plugin, leading to <span style='color:#000000'>zero</span> service charge for IoT data management
 - Supervised the development team and coordinated with clients to build an in-house one-stop interaction dashboard to remove dependency on Grafana Labs for energy data visualization, leading to 25% increase in insights
