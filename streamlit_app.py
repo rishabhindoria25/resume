@@ -8,12 +8,9 @@ st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centere
 #                "layout":"centered", 
 #                "initial_sidebar_state":"auto"}
 
-with open("style.css") as f:
-    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
-st.markdown('![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=https://share.streamlit.io/https://rishabhindoria25-resume-streamlit-app-rxhkpg.streamlit.app&label=VisitorsCount&labelColor=000000&logo=GitHub&logoColor=FFFFFF&color=1D70B8&style=for-the-badge)')
 #####################
 # Header 
-st.write("# **<span style='color:#000000'>Rishabh Indoria</span>**, ~~THE IT CROWD~~", unsafe_allow_html=True)
+st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
 
 image = Image.open('dp.png')
 st.image(image, width=150)
@@ -21,7 +18,7 @@ st.image(image, width=150)
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
-\nI am a highly accomplished scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. I am highly motivated to innovate existing business processes and to achieve optimal results in an efficient and cost-effective manner, utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and a commitment to excellence in both my coursework and various tasks. I am eager to continue this level of performance in the future, utilizing diverse models, frameworks, and data.
+\nI am a highly accomplished data scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and cost-effective manner, utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and commitment to excellence in both my coursework and various work. I am eager to continue this level of performance in future projects, utilizing diverse models, frameworks, and data.
 ''')
 
 #####################
@@ -41,7 +38,7 @@ st.markdown("""
         <a style="color: #FFFFFF" class="nav-link disabled" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a style="color: #FFFFFF" class="nav-link" href="#career-snapshot">Career snapshot</a>
+        <a style="color: #FFFFFF" class="nav-link" href="#career-snapshot">Career snapshots</a>
       </li>
       <li class="nav-item">
         <a style="color: #FFFFFF" class="nav-link" href="#education">Education</a>
@@ -141,15 +138,15 @@ txt("**<span style='color:#000000'>Lead Data Scientist</span>**, *<span style='c
 '2021-2022')
 st.markdown('''
 - Developed model using <span style='color:#000000'>unsupervised K-means clustering</span> and <span style='color:#000000'>fbprophet</span> to forecast machine maintenance using peak detection and <span style='color:#000000'>Time-series Data</span>. Achieved <span style='color:#000000'>97%</span> accuracy
-- Engineered a data ingestion pipeline that utilized <span style='color:#000000'>AWS IoT Core, InfluxDB, and Telegraf</span> to ingest real-time time-series data sent by 2000 IoT devices. Thus, reducing data loss to <span style='color:#000000'>1%</span>
+- Engineered a data ingestion pipeline that utilized <span style='color:#000000'>AWS IoT Core, InfluxDB, and Telegraf</span> to ingest real-time time-series data sent by 2,000 IoT devices. Thus, reducing data loss to <span style='color:#000000'>1%</span>
 - Designed a parallel channel for data ingestion via HTTP chunked protocol and Telegraf directory monitoring plugin, leading to <span style='color:#000000'>zero</span> service charge for IoT data management
-- Supervised the dev team and coordinated with clients to build an in-house one-stop interaction dashboard to remove dependency on Grafana Labs for energy data visualization, leading to 25% more insights
+- Supervised the development team and coordinated with clients to build an in-house one-stop interaction dashboard to remove dependency on Grafana Labs for energy data visualization, leading to 25% increase in insights
 ''', unsafe_allow_html=True)
 
 txt("**<span style='color:#000000'>Software Engineer</span>**, *<span style='color:#000000'>Société Générale</span>*, India",
 '2017-2020')
 st.markdown('''
-- Automated the daily reporting system, reducing report generation efforts by <span style='color:#000000'>6</span> person-days over a period of month
+- Automated the daily reporting system, reducing report generation efforts by <span style='color:#000000'>6</span> person-days each month
 - Developed and deployed <span style='color:#000000'>REST APIs</span> for global teams to get trade data saving <span style='color:#000000'>2.5</span> person-hours daily in ad-hoc ticket requests
 - Migrated existing applications running on on-prem machines to <span style='color:#000000'>AWS EC2</span>, by creating <span style='color:#000000'>CI/CD</span> pipeline using <span style='color:#000000'>Docker</span>. Thereby, reducing the TCO by <span style='color:#000000'>20%</span> to maintain machines and databases
 - Coordinated with teams on effective strategies to migrate monolithic architecture to microservices, saving 30% time on new modules
@@ -179,14 +176,14 @@ st.markdown('''
 txt("**<span style='color:#000000'>Wine Quality Prediction</span>**, <span style='color:#000000'>Northeastern University</span>, Boston, MA",
 'Oct 2022')
 st.markdown('''
-- Gained insights on why predicting a wine's quality in ordinal values are less accurate than classifying, employing <span style='color:#000000'>Regression, Classification and AutoML</span> with tuned hyperparameters
+- Tuned hyperparameters using <span style='color:#000000'>Regression, Classification and AutoML</span> to gain insights on why predicting a wine's quality in ordinal values are less accurate than classifying it.
 ''', unsafe_allow_html=True)
 
 txt("**<span style='color:#000000'>Image Feature Comparison and Ranking, under Dr. Ajitha Shenoy</span>**, <span style='color:#000000'>Manipal Institute of Technology</span>, India",
 'Jan 2017- Jun 2017')
 st.markdown('''
 - Extracted features from query image stored in <span style='color:#000000'>AWS s3</span>. Compared and matched the <span style='color:#000000'>SURF</span> features and returned top 10 matching images with an accuracy of <span style='color:#000000'>92.7%</span>. The developed model was immune to image rotation
-- This tool is used by Manipal Institute of Technology for library catalogue management, saving <span style='color:#000000'>1.5</span> hours of librarian everyday
+- This tool is used by Manipal Institute of Technology for library catalogue management, saving <span style='color:#000000'>1.5</span> hours of librarian work everyday
 ''', unsafe_allow_html=True)
 
 txt("**<span style='color:#000000'>Do My Chores: Microsoft Code.Fun.Do Hackathon</span>**, <span style='color:#000000'>Manipal Institute of Technology</span>, India",
@@ -221,6 +218,10 @@ contact_form = """
 """
 
 st.markdown(contact_form, unsafe_allow_html=True)
+
+with open("style.css") as f:
+    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+st.markdown('![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=https://share.streamlit.io/https://rishabhindoria25-resume-streamlit-app-rxhkpg.streamlit.app&label=VisitorsCount&labelColor=000000&logo=GitHub&logoColor=FFFFFF&color=1D70B8&style=for-the-badge)')
 
 hide_streamlit_style = """
             <style>
