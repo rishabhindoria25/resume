@@ -1,8 +1,8 @@
 {
 	"events": [{
 		"start_date": {
-			"year": "2013",
-			"month": "8"
+			"year": "2017",
+			"month": "6"
 		},
 		"media": {
 			"url": "https://manipal.edu/content/dam/manipal/mu/mcops-manipal/Images_new/mahe-header-color-final.png.transform/manipal-edu-transform-width-height-305px/image.png",
@@ -10,7 +10,7 @@
 		},
 		"text": {
 			"headline": "Bachelor of Technology",
-			"text": "Started my undergraduation at Manipal Institute of Technology"
+			"text": "Received my bachelors at Manipal Institute of Technology"
 		}
 	}, {
 		"start_date": {
@@ -49,7 +49,7 @@
 		},
 		"text": {
 			"headline": "Move to a startup",
-			"text": "After working at an MNC, I realised, I needed more accountability and a fast paced environment.I got my chance at Urja.io as a Data Engineer/Scientist role."
+			"text": "After working at a Multi-National Company (Société Générale), I realised, I was ready for higher impact projects and a fast paced environment. I got my chance at Urja.io as a Data Engineer/Scientist role."
 		}
 	}, {
 		"start_date": {
@@ -62,7 +62,7 @@
 		},
 		"text": {
 			"headline": "Got promoted",
-			"text": "I came into limelight within the organisation, by setting up the complete software pipeline and was promoted to Lead Data Engineer/Scientist."
+			"text": "I came into limelight within Urja.io, by setting up the complete software pipeline and was promoted to Lead Data Engineer/Scientist."
 		}
 	}, {
 		"start_date": {
@@ -74,8 +74,8 @@
 			"credit": "Northeastern University"
 		},
 		"text": {
-			"headline": "Masters at Northeastern University",
-			"text": "Moved to Boston, Massachusetts to pursure Masters of Science (Information Systems)."
+			"headline": "The American Dream",
+			"text": "Moved to Boston, Massachusetts to pursue a Masters of Science in Information Systems."
 		}
 	}]
 }
