@@ -38,7 +38,7 @@ st.markdown("""
         <a style="color: #FFFFFF" class="nav-link disabled" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a style="color: #FFFFFF" class="nav-link" href="#career-snapshot">Career snapshots</a>
+        <a style="color: #FFFFFF" class="nav-link" href="#career-snapshots">Career snapshots</a>
       </li>
       <li class="nav-item">
         <a style="color: #FFFFFF" class="nav-link" href="#education">Education</a>
@@ -218,6 +218,8 @@ contact_form = """
 """
 
 st.markdown(contact_form, unsafe_allow_html=True)
+
+st.markdown("""---""")
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
