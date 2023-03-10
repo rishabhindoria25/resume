@@ -140,7 +140,7 @@ st.markdown('''
 - Developed model using <span style='color:#000000;font-weight:bold'>unsupervised K-means clustering</span> and <span style='color:#000000;font-weight:bold'>fbprophet</span> to forecast machine maintenance using peak detection and <span style='color:#000000;font-weight:bold'>Time-series Data</span>. Achieved <span style='color:#000000;font-weight:bold'>97%</span> accuracy
 - Engineered a data ingestion pipeline that utilized <span style='color:#000000;font-weight:bold'>AWS IoT Core, InfluxDB, and Telegraf</span> to ingest real-time time-series data sent by 2,000 IoT devices. Thus, reducing data loss to <span style='color:#000000;font-weight:bold'>1%</span>
 - Designed a parallel channel for data ingestion via HTTP chunked protocol and Telegraf directory monitoring plugin, leading to <span style='color:#000000;font-weight:bold'>zero</span> service charge for IoT data management
-- Supervised the development team and coordinated with clients to build an in-house one-stop interaction dashboard to remove dependency on Grafana Labs for energy data visualization, leading to 25% increase in insights
+- Supervised the development team and coordinated with clients to build an in-house one-stop interaction dashboard to remove dependency on Grafana Labs for energy data visualization, leading to <span style='color:#000000;font-weight:bold'>25%</span> increase in insights
 ''', unsafe_allow_html=True)
 
 txt("**<span style='color:#000000'>Software Engineer</span>**, *<span style='color:#000000'>Société Générale</span>*, India",
@@ -149,7 +149,7 @@ st.markdown('''
 - Automated the daily reporting system, reducing report generation efforts by <span style='color:#000000;font-weight:bold'>6</span> person-days each month
 - Developed and deployed <span style='color:#000000;font-weight:bold'>REST APIs</span> for global teams to get trade data saving <span style='color:#000000;font-weight:bold'>2.5</span> person-hours daily in ad-hoc ticket requests
 - Migrated existing applications running on on-prem machines to <span style='color:#000000;font-weight:bold'>AWS EC2</span>, by creating <span style='color:#000000;font-weight:bold'>CI/CD</span> pipeline using <span style='color:#000000;font-weight:bold'>Docker</span>. Thereby, reducing the TCO by <span style='color:#000000;font-weight:bold'>20%</span> to maintain machines and databases
-- Coordinated with teams on effective strategies to migrate monolithic architecture to microservices, saving 30% time on new modules
+- Coordinated with teams on effective strategies to migrate monolithic architecture to microservices, saving <span style='color:#000000;font-weight:bold'>30%</span> time on new modules
 ''', unsafe_allow_html=True)
 
 #####################
