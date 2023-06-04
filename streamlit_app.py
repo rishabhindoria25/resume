@@ -38,7 +38,7 @@ st.markdown("""
         <a style="color: #FFFFFF" class="nav-link disabled" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a style="color: #FFFFFF" class="nav-link" href="#career-snapshots">Career snapshots</a>
+        <a style="color: #FFFFFF" class="nav-link" href="#career-snapshot">Career snapshots</a>
       </li>
       <li class="nav-item">
         <a style="color: #FFFFFF" class="nav-link" href="#education">Education</a>
