@@ -108,7 +108,7 @@ st.markdown('''
 txt("**<span style='color:#000000'>Masters of Science</span>** (Information Systems), *<span style='color:#000000'>Northeastern University</span>*, Boston, Massachusetts",
 '2022-2024')
 st.markdown('''
-- GPA: **<span style='color:#000000'>3.67</span>**
+- GPA: **<span style='color:#000000'>3.76</span>**
 ''', unsafe_allow_html=True)
 
 txt("**<span style='color:#000000'>Bachelors of Technology</span>** (Information Technology), *<span style='color:#000000'>Manipal Institute of Technology</span>*, Manipal, India",
