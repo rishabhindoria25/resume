@@ -363,4 +363,95 @@ st.markdown('''
 - Developed model using <span style='color:#000000;font-weight:bold'>unsupervised K-means clustering</span> and <span style='color:#000000;font-weight:bold'>fbprophet</span> to forecast machine maintenance using peak detection and <span style='color:#000000;font-weight:bold'>Time-series Data</span>. Achieved <span style='color:#000000;font-weight:bold'>97%</span> accuracy
 - Engineered a data ingestion pipeline that utilized <span style='color:#000000;font-weight:bold'>AWS IoT Core, InfluxDB, and Telegraf</span> to ingest real-time time-series data sent by 2,000 IoT devices. Thus, reducing data loss to <span style='color:#000000;font-weight:bold'>1%</span>
 - Designed a parallel channel for data ingestion via HTTP chunked protocol and Telegraf directory monitoring plugin, leading to <span style='color:#000000;font-weight:bold'>zero</span> service charge for IoT data management
-- Supervised the development team and coordinated with clients to build an in-house one-stop interaction dashboard to remove dependency on Grafana Labs for energy data visualization, leading to <span style='color:#000000
+- Supervised the development team and coordinated with clients to build an in-house one-stop interaction dashboard to remove dependency on Grafana Labs for energy data visualization, leading to <span style='color:#000000;font-weight:bold'>25%</span> increase in insights
+''', unsafe_allow_html=True)
+
+txt("**<span style='color:#000000'>Software Engineer</span>**, *<span style='color:#000000'>Société Générale</span>*, India", '2017-2020')
+
+st.markdown('''
+- Automated the daily reporting system, reducing report generation efforts by <span style='color:#000000;font-weight:bold'>6</span> person-days each month
+- Developed and deployed <span style='color:#000000;font-weight:bold'>REST APIs</span> for global teams to get trade data saving <span style='color:#000000;font-weight:bold'>2.5</span> person-hours daily in ad-hoc ticket requests
+- Migrated existing applications running on on-prem machines to <span style='color:#000000;font-weight:bold'>AWS EC2</span>, by creating <span style='color:#000000;font-weight:bold'>CI/CD</span> pipeline using <span style='color:#000000;font-weight:bold'>Docker</span>. Thereby, reducing the TCO by <span style='color:#000000;font-weight:bold'>20%</span> to maintain machines and databases
+- Coordinated with teams on effective strategies to migrate monolithic architecture to microservices, saving <span style='color:#000000;font-weight:bold'>30%</span> time on new modules
+''', unsafe_allow_html=True)
+
+# Projects
+st.markdown("""---""")
+st.markdown('''
+## Projects
+''')
+
+txt("**<span style='color:#000000'>AndroXmeda</span>**, *<span style='color:#000000'>Northeastern University</span>*, Boston, MA", 'Jan 2023 - Apr 2023')
+
+st.markdown('''
+- Modeled a REST API with <span style='color:#000000;font-weight:bold'>NodeJS, Express, Postgres, Bcrypt and Sequelize ORM</span> for a Full-Stack application in ReactJS
+- Deployed the REST API on AWS CloudFormation using <span style='color:#000000;font-weight:bold'>S3, RDS and EC2</span> using a custom AMI built using Packer
+- Modeled custom <span style='color:#000000;font-weight:bold'>GitHub Actions</span> to setup CI/CD pipelines for streamlining API delivery with <span style='color:#000000;font-weight:bold'>AWS SES</span> notifications
+''', unsafe_allow_html=True)
+
+txt("**<span style='color:#000000'>Economics of Happiness</span>**, <span style='color:#000000'>Northeastern University</span>, Boston, MA", 'Dec 2022')
+
+st.markdown('''
+- Determined the optimal border value for the <span style='color:#000000;font-weight:bold'>classification</span> of Happy Score (Ordinal Values) into "Happy" or "Sad", utilizing various mathematical measures, such as the mean, median, harmonic mean, and geometric mean 
+- Examined the impact of utilizing different border values on the performance of models and the relative importance of predictors
+''', unsafe_allow_html=True)
+
+txt("**<span style='color:#000000'>Wine Quality Prediction</span>**, <span style='color:#000000'>Northeastern University</span>, Boston, MA", 'Oct 2022')
+
+st.markdown('''
+- Tuned hyperparameters using <span style='color:#000000;font-weight:bold'>Regression, Classification and AutoML</span> to gain insights on why predicting a wine's quality in ordinal values are less accurate than classifying it.
+''', unsafe_allow_html=True)
+
+txt("**<span style='color:#000000'>Image Feature Comparison and Ranking, under Dr. Ajitha Shenoy</span>**, <span style='color:#000000'>Manipal Institute of Technology</span>, India", 'Jan 2017- Jun 2017')
+
+st.markdown('''
+- Extracted features from query image stored in <span style='color:#000000;font-weight:bold'>AWS s3</span>. Compared and matched the <span style='color:#000000;font-weight:bold'>SURF</span> features and returned top 10 matching images with an accuracy of <span style='color:#000000;font-weight:bold'>92.7%</span>. The developed model was immune to image rotation
+- This tool is used by Manipal Institute of Technology for library catalogue management, saving <span style='color:#000000;font-weight:bold'>1.5</span> hours of librarian work everyday
+''', unsafe_allow_html=True)
+
+txt("**<span style='color:#000000'>Do My Chores: Microsoft Code.Fun.Do Hackathon</span>**, <span style='color:#000000'>Manipal Institute of Technology</span>, India", 'Aug 2016')
+
+st.markdown('''
+- Developed a windows application to help students do or get chores done with an associated payout, cutting down late submissions by <span style='color:#000000;font-weight:bold'>20%</span>. Chores were displayed as markers on google maps
+''', unsafe_allow_html=True)
+
+# Social Media
+st.markdown("""---""")
+st.markdown('''
+## Social Media
+''')
+
+txt("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
+txt("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
+txt("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
+
+# Contact Me
+st.markdown("""---""")
+st.header("Contact Me")
+
+contact_form = """
+<form action="https://formsubmit.co/indoriarishabh25@gmail.com" method="POST">
+     <input type="hidden" name="_captcha" value="false">
+     <input type="text" name="name" placeholder="Your name" required>
+     <input type="email" name="email" placeholder="Your email" required>
+     <textarea name="message" placeholder="Your message here"></textarea>
+     <button type="submit">Send</button>
+</form>
+"""
+
+st.markdown(contact_form, unsafe_allow_html=True)
+
+st.markdown("""---""")
+
+with open("style.css") as f:
+    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+
+st.markdown('![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=https://share.streamlit.io/https://rishabhindoria25-resume-streamlit-app-rxhkpg.streamlit.app&label=VisitorsCount&labelColor=000000&logo=GitHub&logoColor=FFFFFF&color=1D70B8&style=for-the-badge)')
+
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
