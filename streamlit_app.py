@@ -1,119 +1,6 @@
-# import streamlit as st
-# from streamlit_timeline import timeline
-# from PIL import Image
-# image = Image.open("icon.jpg")
-# profile_pic = Image.open('dp.png')
-# resume_file = "RishabhIndoria_Resume.pdf"
-# SOCIAL_MEDIA = {
-#     "LinkedIn": "https://linkedin.com/in/rishabhindoria/",
-#     "GitHub": "https://github.com/rishabhindoria25",
-#     "Kaggle": "https://www.kaggle.com/rishabhindoria",
-# }
-
-# # txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
-# # txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
-# # txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
-# with open(resume_file, "rb") as pdf_file:
-#     PDFbyte = pdf_file.read()
-# st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centered", initial_sidebar_state="auto")
-# # PAGE_CONFIG = {"page_title":, 
-# #                "page_icon":, 
-# #                "layout":"centered", 
-# #                "initial_sidebar_state":"auto"}
-
-# #####################
-# # Header
-# # # --- HERO SECTION ---
-# # col1, col2 = st.columns(2, gap="small")
-# # with col1:
-    
-# #     st.image(profile_pic, width=230)
-# #     # st.image(profile_pic, width=230)
-
-# # with col2:
-# #     # st.title(NAME)
-# #     # st.write(DESCRIPTION)
-# #     st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
-# #     st.download_button(
-# #         label=" 📄 Download Resume",
-# #         data=PDFbyte,
-# #         file_name=resume_file.name,
-# #         mime="application/octet-stream",
-# #     )
-# #     # st.write("📫", EMAIL)
-
-
-# st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
-
-# image = Image.open('dp.png')
-# st.image(image, width=150)
-# # st.markdown(
-# #     f'<a href="data:application/octet-stream;base64,{PDFbyte}" download="{resume_file}" style="color:#16A2CB">📄 Download Resume</a>',
-# #     unsafe_allow_html=True
-# # )
-# # Add a download button for the resume
-# st.markdown("## Download Resume")
-# st.download_button(
-#         label=" 📄 Download Resume",
-#         data=PDFbyte,
-#         file_name=resume_file,
-#         mime="application/octet-stream",
-#     )
-# # --- SOCIAL LINKS ---
-# st.markdown("""---""")
-# st.markdown("## Find me on")
-# st.write('\n')
-# cols = st.columns(len(SOCIAL_MEDIA))
-# for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-#     cols[index].write(f"[{platform}]({link})")
-
-
-# st.markdown("""---""")
-# st.markdown('## Summary', unsafe_allow_html=True)
-# st.info('''
-# &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
-# \nI am a highly accomplished data scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and cost-effective manner, utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and commitment to excellence in both my coursework and various work. I am eager to continue this level of performance in future projects, utilizing diverse models, frameworks, and data.
-# ''')
-
-# #####################
-# # Navigation
-
-# st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
-
-# st.markdown("""
-# <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #021014;">
-#   <a style="color: #16A2CB" class="navbar-brand" target="_blank">Rishabh Indoria</a>
-#   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-#     <span class="navbar-toggler-icon"></span>
-#   </button>
-#   <div class="collapse navbar-collapse" id="navbarNav">
-#     <ul class="navbar-nav">
-#       <li class="nav-item active">
-#         <a style="color: #FFFFFF" class="nav-link disabled" href="/">Home <span class="sr-only">(current)</span></a>
-#       </li>
-#       <li class="nav-item">
-#         <a style="color: #FFFFFF" class="nav-link" href="#career-snapshot">Career snapshots</a>
-#       </li>
-#       <li class="nav-item">
-#         <a style="color: #FFFFFF" class="nav-link" href="#education">Education</a>
-#       </li>
-#       <li class="nav-item">
-#         <a style="color: #FFFFFF" class="nav-link" href="#work-experience">Work Experience</a>
-#       </li>
-#       <li class="nav-item">
-#         <a style="color: #FFFFFF" class="nav-link" href="#projects">Projects</a>
-#       </li>
-#       <li class="nav-item">
-#         <a style="color: #FFFFFF" class="nav-link" href="#social-media">Social Media</a>
-#       </li>
-#     </ul>
-#   </div>
-# </nav>
-# """, unsafe_allow_html=True)
 import streamlit as st
+from streamlit_timeline import timeline
 from PIL import Image
-
-# Constants
 image = Image.open("icon.jpg")
 profile_pic = Image.open('dp.png')
 resume_file = "RishabhIndoria_Resume.pdf"
@@ -123,45 +10,76 @@ SOCIAL_MEDIA = {
     "Kaggle": "https://www.kaggle.com/rishabhindoria",
 }
 
-# Load resume PDF file
+# txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
+# txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
+# txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
+st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centered", initial_sidebar_state="auto")
+# PAGE_CONFIG = {"page_title":, 
+#                "page_icon":, 
+#                "layout":"centered", 
+#                "initial_sidebar_state":"auto"}
 
-# Set page configuration
-st.set_page_config(
-    page_title="Rishabh Indoria",
-    page_icon=image,
-    layout="centered",
-    initial_sidebar_state="auto",
-)
-
+#####################
 # Header
-header_col1, header_col2 = st.columns([3, 1])  # Divide into two columns
-header_col1.image(profile_pic, width=150)
-header_col2.markdown("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
-header_col2.download_button(
-    label=" 📄 Download Resume",
-    data=PDFbyte,
-    file_name=resume_file,
-    mime="application/octet-stream",
-)
+# # --- HERO SECTION ---
+# col1, col2 = st.columns(2, gap="small")
+# with col1:
+    
+#     st.image(profile_pic, width=230)
+#     # st.image(profile_pic, width=230)
 
-# Social Links
+# with col2:
+#     # st.title(NAME)
+#     # st.write(DESCRIPTION)
+#     st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
+#     st.download_button(
+#         label=" 📄 Download Resume",
+#         data=PDFbyte,
+#         file_name=resume_file.name,
+#         mime="application/octet-stream",
+#     )
+#     # st.write("📫", EMAIL)
+
+
+st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
+
+image = Image.open('dp.png')
+st.image(image, width=150)
+# st.markdown(
+#     f'<a href="data:application/octet-stream;base64,{PDFbyte}" download="{resume_file}" style="color:#16A2CB">📄 Download Resume</a>',
+#     unsafe_allow_html=True
+# )
+# Add a download button for the resume
+st.markdown("## Download Resume")
+st.download_button(
+        label=" 📄 Download Resume",
+        data=PDFbyte,
+        file_name=resume_file,
+        mime="application/octet-stream",
+    )
+# --- SOCIAL LINKS ---
+st.markdown("""---""")
 st.markdown("## Find me on")
 st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
-for platform, link in SOCIAL_MEDIA.items():
-    cols[len(cols) - 1].write(f"[{platform}]({link})")
+for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+    cols[index].write(f"[{platform}]({link})")
 
-# Summary
+
+st.markdown("""---""")
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
 \nI am a highly accomplished data scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and cost-effective manner, utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and commitment to excellence in both my coursework and various work. I am eager to continue this level of performance in future projects, utilizing diverse models, frameworks, and data.
 ''')
 
+#####################
 # Navigation
+
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
+
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #021014;">
   <a style="color: #16A2CB" class="navbar-brand" target="_blank">Rishabh Indoria</a>
@@ -192,8 +110,6 @@ st.markdown("""
   </div>
 </nav>
 """, unsafe_allow_html=True)
-
-# ... (continue with the rest of your code)
 
 #####################
 # Custom function for printing text
