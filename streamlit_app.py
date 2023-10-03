@@ -276,7 +276,7 @@ with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
 # Header
-col1, col2 = st.columns(2, gap="small")
+col1, col2 = st.columns(2)
 with col1:
     st.image(profile_pic, width=230)
 
