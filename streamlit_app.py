@@ -278,7 +278,7 @@ with open(resume_file, "rb") as pdf_file:
 # Header
 col1, col2 = st.columns(2)
 with col1:
-    st.image(profile_pic, width=230)
+    st.image(profile_pic, width=150)
 
 with col2:
     st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
