@@ -11,39 +11,9 @@ SOCIAL_MEDIA = {
     "Kaggle": "https://www.kaggle.com/rishabhindoria",
 }
 
-# txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
-# txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
-# txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centered", initial_sidebar_state="auto")
-# PAGE_CONFIG = {"page_title":, 
-#                "page_icon":, 
-#                "layout":"centered", 
-#                "initial_sidebar_state":"auto"}
-
-#####################
-# Header
-# # --- HERO SECTION ---
-# col1, col2 = st.columns(2, gap="small")
-# with col1:
-    
-#     st.image(profile_pic, width=230)
-#     # st.image(profile_pic, width=230)
-
-# with col2:
-#     # st.title(NAME)
-#     # st.write(DESCRIPTION)
-#     st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
-#     st.download_button(
-#         label=" 📄 Download Resume",
-#         data=PDFbyte,
-#         file_name=resume_file.name,
-#         mime="application/octet-stream",
-#     )
-#     # st.write("📫", EMAIL)
-
-
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
 # Load the image
 image = Image.open('dp.png')
@@ -71,64 +41,11 @@ with container:
 
     st.write('</div>', unsafe_allow_html=True)
 
-# image = Image.open('dp.png')
-# # Create a centered container
-# container = st.container()
 
-# # Place the image inside the centered container
-# with container:
-#     st.image(image, width=230)
-# # st.image(image, width=230)
-# # st.download_button(
-# #         label=" 📄 Download Resume",
-# #         data=PDFbyte,
-# #         file_name=resume_file,
-# #         mime="application/octet-stream",
-# #     )
-# st.markdown(
-#     """
-#     <div style="display: flex; justify-content: center;">
-#         <button style="background-color: #16A2CB; color: white; padding: 10px 20px; font-size: 18px; border: none; cursor: pointer; border-radius: 5px;">
-#             📄 Download Resume
-#         </button>
-#     </div>
-#     """,
-#     unsafe_allow_html=True
-# )
-
-
-# col1, col2, col3= st.columns(3)
-# with col1:
-#     st.image(image, width=150)
-# with col3:
-#     st.download_button(
-#         label=" 📄 Download Resume",
-#         data=PDFbyte,
-#         file_name=resume_file,
-#         mime="application/octet-stream",
-#     )
-     
-     
-# image = Image.open('dp.png')
-# st.image(image, width=150)
-# st.markdown(
-#     f'<a href="data:application/octet-stream;base64,{PDFbyte}" download="{resume_file}" style="color:#16A2CB">📄 Download Resume</a>',
-#     unsafe_allow_html=True
-# )
-# Add a download button for the resume
-# st.markdown("## Download Resume")
-# st.download_button(
-#         label=" 📄 Download Resume",
-#         data=PDFbyte,
-#         file_name=resume_file,
-#         mime="application/octet-stream",
-#     )
-# # --- SOCIAL LINKS ---
 # st.markdown("""---""")
-
-st.markdown("""---""")
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
+st.markdown("""---""")
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
 \nI am a highly accomplished data scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and cost-effective manner, utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and commitment to excellence in both my coursework and various work. I am eager to continue this level of performance in future projects, utilizing diverse models, frameworks, and data.
 ''')
@@ -202,21 +119,20 @@ def txt4(a, b, c):
     st.markdown(c, unsafe_allow_html=True)
 
 #####################
-st.markdown("""---""")
 st.markdown('''
 ## Career-snapshot
 ''')
-    
+st.markdown("""---""")    
 with st.spinner(text="Building line"):
     with open('timeline.json', "r") as f:
         data = f.read()
         timeline(data, height=500)
 
 #####################
-st.markdown("""---""")
 st.markdown('''
 ## Education
 ''')
+st.markdown("""---""")
 txt("**<span style='color:#000000'>Masters of Science</span>** (Information Systems), *<span style='color:#000000'>Northeastern University</span>*, Boston, Massachusetts",
 '2022-2024')
 st.markdown('''
@@ -227,11 +143,10 @@ txt("**<span style='color:#000000'>Bachelors of Technology</span>** (Information
 '2013-2017')
 
 #####################
-st.markdown("""---""")
 st.markdown('''
 ## Skills
 ''')
-
+st.markdown("""---""")
 txt3("**<span style='color:#000000'>Language</span>**", "<span style='color:#000000'>Python,&ensp;Javascript,&ensp;Node.js,&ensp;SQL,&ensp;HTML,&ensp;CSS,&ensp;React.js</span>")
 txt3("**<span style='color:#000000'>Database</span>**", "<span style='color:#000000'>InfluxDB, &ensp; MongoDB ,&ensp;  MSSQL , &ensp; Redshift ,&ensp;  DynamoDB</span>")
 txt3("**<span style='color:#000000'>Frameworks</span>**", "<span style='color:#000000'>Pycaret , &ensp; PyTorch , &ensp; Scikit-learn ,&ensp;  Telegraf , &ensp; Flask ,&ensp; streamlit, &ensp;  keras ,  &ensp; Tensorflow</span>")
@@ -241,11 +156,11 @@ txt3("**<span style='color:#000000'>CI/CD</span>**", "<span style='color:#000000
 txt3("**<span style='color:#000000'>Data Visualization</span>**", "<span style='color:#000000'> Grafana ,&ensp;  Chart.js , &ensp; Tableau , &ensp; PowerBI</span>")
 
 #####################
-st.markdown("""---""")
+
 st.markdown('''
 ## Work Experience
 ''')
-
+st.markdown("""---""")
 txt("**<span style='color:#000000'>Lead Data Scientist</span>**, *<span style='color:#000000'>Urja.io</span>*, India",
 '2021-2022')
 st.markdown('''
@@ -265,11 +180,10 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 
 #####################
-st.markdown("""---""")
 st.markdown('''
 ## Projects
 ''')
-
+st.markdown("""---""")
 txt("**<span style='color:#000000'>AndroXmeda</span>**, *<span style='color:#000000'>Northeastern University</span>*, Boston, MA",
 'Jan 2023 - Apr 2023')
 st.markdown('''
@@ -307,34 +221,9 @@ st.markdown('''
 
 #####################
 # Add social media links
-st.markdown("""---""")
-# st.markdown('''
-# ## Social Media
-# ''')
-# txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
-# txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
-# txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
 
-
-#####################
-# st.markdown("""---""")
-# st.header("Contact Me")
-
-
-# contact_form = """
-# <form action="https://formsubmit.co/indoriarishabh25@gmail.com" method="POST">
-#      <input type="hidden" name="_captcha" value="false">
-#      <input type="text" name="name" placeholder="Your name" required>
-#      <input type="email" name="email" placeholder="Your email" required>
-#      <textarea name="message" placeholder="Your message here"></textarea>
-#      <button type="submit">Send</button>
-# </form>
-# """
-
-# st.markdown(contact_form, unsafe_allow_html=True)
-
-# st.markdown("""---""")
 st.markdown("## Find me on")
+st.markdown("""---""")
 st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
