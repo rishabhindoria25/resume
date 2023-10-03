@@ -159,7 +159,7 @@ txt3("**<span style='color:#000000'>Data Visualization</span>**", "<span style='
 
 st.expander('''
 ## Work Experience
-''')
+'''):
 st.markdown("""---""")
 txt("**<span style='color:#000000'>Lead Data Scientist</span>**, *<span style='color:#000000'>Urja.io</span>*, India",
 '2021-2022')
@@ -182,7 +182,7 @@ st.markdown('''
 #####################
 st.expander('''
 ## Projects
-''')
+'''):
 st.markdown("""---""")
 txt("**<span style='color:#000000'>AndroXmeda</span>**, *<span style='color:#000000'>Northeastern University</span>*, Boston, MA",
 'Jan 2023 - Apr 2023')
