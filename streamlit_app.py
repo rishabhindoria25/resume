@@ -358,7 +358,7 @@ st.markdown('''
 with st.spinner(text="Building line"):
     with open('timeline.json', "r") as f:
         data = f.read()
-        timeline(data, height=500)
+        timeline(data)
 
 # Education
 st.markdown("""---""")
