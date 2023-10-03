@@ -224,17 +224,13 @@ st.markdown('''
 
 #####################
 # Add social media links
-st.markdown('## Social Media')
-st.markdown(f"[LinkedIn](https://www.linkedin.com/in/rishabhindoria/)")
-st.markdown(f"[GitHub](https://github.com/rishabhindoria25/)")
-st.markdown(f"[Kaggle](https://www.kaggle.com/rishabhindoria)")
 st.markdown("""---""")
 st.markdown('''
 ## Social Media
 ''')
-# txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
-# txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
-# txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
+txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
+txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
+txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
 
 #####################
 st.markdown("""---""")
