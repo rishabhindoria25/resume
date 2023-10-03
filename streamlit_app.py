@@ -257,25 +257,29 @@
 #             """
 # st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 import streamlit as st
-from streamlit_timeline import timeline
 from PIL import Image
+from pathlib import Path
 
-# Configuration options
-st.set_page_config(
-    page_title="Rishabh Indoria",
-    page_icon="icon.jpg",
-    # layout="centered",
-    initial_sidebar_state="auto"
-)
+# --- PATH SETTINGS ---
+current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
+resume_file = current_dir / "RishabhIndoria_Resume.pdf"
+profile_pic = current_dir / "dp.png"
 
-# Load images and resume
-profile_pic = Image.open('dp.png')
-resume_file = "RishabhIndoria_Resume.pdf"
-
+# --- LOAD IMAGES AND RESUME ---
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
-# Header
+profile_pic = Image.open(profile_pic)
+
+# --- CONFIGURATION OPTIONS ---
+st.set_page_config(
+    page_title="Rishabh Indoria",
+    page_icon="icon.jpg",
+    layout="centered",  # Add this line to center content
+    initial_sidebar_state="auto"
+)
+
+# --- HEADER ---
 col1, col2 = st.columns(2)
 with col1:
     st.image(profile_pic, width=150)
@@ -285,20 +289,18 @@ with col2:
     st.download_button(
         label=" 📄 Download Resume",
         data=PDFbyte,
-        file_name=resume_file,
+        file_name=resume_file.name,
         mime="application/octet-stream",
     )
 
-# Summary
+# --- SUMMARY ---
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
 \nI am a highly accomplished data scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and cost-effective manner, utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and commitment to excellence in both my coursework and various work. I am eager to continue this level of performance in future projects, utilizing diverse models, frameworks, and data.
 ''')
 
-# Navigation
-# Navigation
-
+# --- NAVIGATION ---
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 
 st.markdown("""
