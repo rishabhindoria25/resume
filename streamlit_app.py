@@ -56,7 +56,7 @@ st.markdown("## Download Resume")
 st.download_button(
         label=" 📄 Download Resume",
         data=PDFbyte,
-        file_name=resume_file.name,
+        file_name=resume_file,
         mime="application/octet-stream",
     )
 # --- SOCIAL LINKS ---
