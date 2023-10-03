@@ -47,10 +47,10 @@ st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centere
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
 image = Image.open('dp.png')
 
-col1, col2, col3 = st.columns(3)
+col1, col2= st.columns([1,1])
 with col1:
     st.image(image, width=150)
-with col3:
+with col2:
     st.download_button(
         label=" 📄 Download Resume",
         data=PDFbyte,
@@ -293,7 +293,7 @@ st.markdown("""---""")
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
-st.markdown('![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=https://share.streamlit.io/https://rishabhindoria25-resume-streamlit-app-rxhkpg.streamlit.app&label=VisitorsCount&labelColor=000000&logo=GitHub&logoColor=FFFFFF&color=1D70B8&style=for-the-badge)')
+# st.markdown('![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=https://share.streamlit.io/https://rishabhindoria25-resume-streamlit-app-rxhkpg.streamlit.app&label=VisitorsCount&labelColor=000000&logo=GitHub&logoColor=FFFFFF&color=1D70B8&style=for-the-badge)')
 
 hide_streamlit_style = """
             <style>
