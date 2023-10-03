@@ -264,7 +264,7 @@ from PIL import Image
 st.set_page_config(
     page_title="Rishabh Indoria",
     page_icon="icon.jpg",
-    layout="centered",
+    # layout="centered",
     initial_sidebar_state="auto"
 )
 
