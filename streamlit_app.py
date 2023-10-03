@@ -46,7 +46,13 @@ st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centere
 
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
 image = Image.open('dp.png')
-st.image(image, width=230)
+# Create a centered container
+container = st.container()
+
+# Place the image inside the centered container
+with container:
+    st.image(image, width=230)
+# st.image(image, width=230)
 # st.download_button(
 #         label=" 📄 Download Resume",
 #         data=PDFbyte,
