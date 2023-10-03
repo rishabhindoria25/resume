@@ -2,6 +2,9 @@ import streamlit as st
 from streamlit_timeline import timeline
 from PIL import Image
 image = Image.open("icon.jpg")
+resume_file = "RishabhIndoria_Resume.pdf"
+with open(resume_file, "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
 st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centered", initial_sidebar_state="auto")
 # PAGE_CONFIG = {"page_title":, 
 #                "page_icon":, 
@@ -9,11 +12,31 @@ st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centere
 #                "initial_sidebar_state":"auto"}
 
 #####################
-# Header 
-st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
+# Header
+# --- HERO SECTION ---
+col1, col2 = st.columns(2, gap="small")
+with col1:
+    image = Image.open('dp.png')
+    st.image(image, width=230)
+    # st.image(profile_pic, width=230)
 
-image = Image.open('dp.png')
-st.image(image, width=150)
+with col2:
+    # st.title(NAME)
+    # st.write(DESCRIPTION)
+    st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
+    st.download_button(
+        label=" 📄 Download Resume",
+        data=PDFbyte,
+        file_name=resume_file.name,
+        mime="application/octet-stream",
+    )
+    # st.write("📫", EMAIL)
+
+
+# st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
+
+# image = Image.open('dp.png')
+# st.image(image, width=150)
 
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
