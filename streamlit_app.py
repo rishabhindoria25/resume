@@ -47,10 +47,10 @@ st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centere
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
 image = Image.open('dp.png')
 
-col1, col2= st.columns([2,1])
+col1, col2, col3= st.columns(2)
 with col1:
-    st.image(image, width=150, use_column_width=True)
-with col2:
+    st.image(image, width=150)
+with col3:
     st.download_button(
         label=" 📄 Download Resume",
         data=PDFbyte,
