@@ -340,7 +340,7 @@ st.markdown("""
 
 # Define a function for printing text
 def txt(a, b):
-    col1, col2 = st.columns([4, 1])
+    col1, col2 = st.columns(2)
     with col1:
         st.markdown(a, unsafe_allow_html=True)
     with col2:
