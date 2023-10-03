@@ -159,7 +159,7 @@ txt3("**<span style='color:#000000'>Data Visualization</span>**", "<span style='
 
 st.markdown('''
 ## Work Experience
-'''):
+''')
 st.markdown("""---""")
 txt("**<span style='color:#000000'>Lead Data Scientist</span>**, *<span style='color:#000000'>Urja.io</span>*, India",
 '2021-2022')
