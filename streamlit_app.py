@@ -4,6 +4,15 @@ from PIL import Image
 image = Image.open("icon.jpg")
 profile_pic = Image.open('dp.png')
 resume_file = "RishabhIndoria_Resume.pdf"
+SOCIAL_MEDIA = {
+    "LinkedIn": "https://linkedin.com/in/rishabhindoria/",
+    "GitHub": "https://github.com/rishabhindoria25",
+    "Kaggle": "https://www.kaggle.com/rishabhindoria",
+}
+
+txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
+txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
+txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centered", initial_sidebar_state="auto")
@@ -44,12 +53,13 @@ st.image(image, width=150)
 # )
 # Add a download button for the resume
 st.markdown("## Download Resume")
-st.markdown('''
-## Social Media
-''')
-txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
-txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
-txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
+# --- SOCIAL LINKS ---
+st.write('\n')
+cols = st.columns(len(SOCIAL_MEDIA))
+for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+    cols[index].write(f"[{platform}]({link})")
+
+
 
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
@@ -232,6 +242,13 @@ st.markdown('''
 #####################
 # Add social media links
 st.markdown("""---""")
+st.markdown('''
+## Social Media
+''')
+txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
+txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
+txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
+
 
 #####################
 # st.markdown("""---""")
