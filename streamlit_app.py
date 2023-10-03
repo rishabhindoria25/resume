@@ -44,6 +44,13 @@ st.image(image, width=150)
 # )
 # Add a download button for the resume
 st.markdown("## Download Resume")
+st.markdown('''
+## Social Media
+''')
+txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
+txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
+txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
+
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
@@ -225,31 +232,25 @@ st.markdown('''
 #####################
 # Add social media links
 st.markdown("""---""")
-st.markdown('''
-## Social Media
-''')
-txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
-txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
-txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
 
 #####################
-st.markdown("""---""")
-st.header("Contact Me")
+# st.markdown("""---""")
+# st.header("Contact Me")
 
 
-contact_form = """
-<form action="https://formsubmit.co/indoriarishabh25@gmail.com" method="POST">
-     <input type="hidden" name="_captcha" value="false">
-     <input type="text" name="name" placeholder="Your name" required>
-     <input type="email" name="email" placeholder="Your email" required>
-     <textarea name="message" placeholder="Your message here"></textarea>
-     <button type="submit">Send</button>
-</form>
-"""
+# contact_form = """
+# <form action="https://formsubmit.co/indoriarishabh25@gmail.com" method="POST">
+#      <input type="hidden" name="_captcha" value="false">
+#      <input type="text" name="name" placeholder="Your name" required>
+#      <input type="email" name="email" placeholder="Your email" required>
+#      <textarea name="message" placeholder="Your message here"></textarea>
+#      <button type="submit">Send</button>
+# </form>
+# """
 
-st.markdown(contact_form, unsafe_allow_html=True)
+# st.markdown(contact_form, unsafe_allow_html=True)
 
-st.markdown("""---""")
+# st.markdown("""---""")
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
