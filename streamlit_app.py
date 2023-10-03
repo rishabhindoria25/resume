@@ -38,10 +38,10 @@ st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROW
 
 image = Image.open('dp.png')
 st.image(image, width=150)
-st.markdown(
-    f'<a href="data:application/octet-stream;base64,{PDFbyte}" download="{resume_file}" style="color:#16A2CB">📄 Download Resume</a>',
-    unsafe_allow_html=True
-)
+# st.markdown(
+#     f'<a href="data:application/octet-stream;base64,{PDFbyte}" download="{resume_file}" style="color:#16A2CB">📄 Download Resume</a>',
+#     unsafe_allow_html=True
+# )
 # Add a download button for the resume
 st.markdown("## Download Resume")
 st.markdown('## Summary', unsafe_allow_html=True)
