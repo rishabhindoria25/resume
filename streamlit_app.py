@@ -5,6 +5,7 @@ image = Image.open("icon.jpg")
 profile_pic = Image.open('dp.png')
 resume_file = "RishabhIndoria_Resume.pdf"
 SOCIAL_MEDIA = {
+    "Email": "indoria.r@northeastern.edu",
     "LinkedIn": "https://linkedin.com/in/rishabhindoria/",
     "GitHub": "https://github.com/rishabhindoria25",
     "Kaggle": "https://www.kaggle.com/rishabhindoria",
