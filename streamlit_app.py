@@ -53,7 +53,14 @@ st.image(image, width=150)
 # )
 # Add a download button for the resume
 st.markdown("## Download Resume")
+st.download_button(
+        label=" 📄 Download Resume",
+        data=PDFbyte,
+        file_name=resume_file.name,
+        mime="application/octet-stream",
+    )
 # --- SOCIAL LINKS ---
+st.markdown("## Find me on")
 st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
