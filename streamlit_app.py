@@ -38,7 +38,12 @@ st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROW
 
 image = Image.open('dp.png')
 st.image(image, width=150)
-
+st.markdown(
+    f'<a href="data:application/octet-stream;base64,{PDFbyte}" download="{resume_file}" style="color:#16A2CB">📄 Download Resume</a>',
+    unsafe_allow_html=True
+)
+# Add a download button for the resume
+st.markdown("## Download Resume")
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
@@ -218,13 +223,18 @@ st.markdown('''
 
 
 #####################
+# Add social media links
+st.markdown('## Social Media')
+st.markdown(f"[LinkedIn](https://www.linkedin.com/in/rishabhindoria/)")
+st.markdown(f"[GitHub](https://github.com/rishabhindoria25/)")
+st.markdown(f"[Kaggle](https://www.kaggle.com/rishabhindoria)")
 st.markdown("""---""")
 st.markdown('''
 ## Social Media
 ''')
-txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
-txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
-txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
+# txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
+# txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
+# txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
 
 #####################
 st.markdown("""---""")
