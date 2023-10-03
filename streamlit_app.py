@@ -60,6 +60,7 @@ st.download_button(
         mime="application/octet-stream",
     )
 # --- SOCIAL LINKS ---
+st.markdown("""---""")
 st.markdown("## Find me on")
 st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
@@ -67,7 +68,7 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
 
 
-
+st.markdown("""---""")
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
@@ -249,12 +250,12 @@ st.markdown('''
 #####################
 # Add social media links
 st.markdown("""---""")
-st.markdown('''
-## Social Media
-''')
-txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
-txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
-txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
+# st.markdown('''
+# ## Social Media
+# ''')
+# txt2("**<span style='color:#000000'>LinkedIn</span>**", "<span style='color:#000000'>https://www.linkedin.com/in/rishabhindoria/</span>")
+# txt2("**<span style='color:#000000'>GitHub</span>**", "<span style='color:#000000'>https://github.com/rishabhindoria25/</span>")
+# txt2("**<span style='color:#000000'>Kaggle</span>**", "<span style='color:#000000'>https://www.kaggle.com/rishabhindoria</span>")
 
 
 #####################
