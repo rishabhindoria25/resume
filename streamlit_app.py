@@ -47,12 +47,22 @@ st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centere
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
 image = Image.open('dp.png')
 st.image(image, width=230)
-st.download_button(
-        label=" 📄 Download Resume",
-        data=PDFbyte,
-        file_name=resume_file,
-        mime="application/octet-stream",
-    )
+# st.download_button(
+#         label=" 📄 Download Resume",
+#         data=PDFbyte,
+#         file_name=resume_file,
+#         mime="application/octet-stream",
+#     )
+st.markdown(
+    """
+    <div style="display: flex; justify-content: center;">
+        <button style="background-color: #16A2CB; color: white; padding: 10px 20px; font-size: 18px; border: none; cursor: pointer; border-radius: 5px;">
+            📄 Download Resume
+        </button>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 
 # col1, col2, col3= st.columns(3)
