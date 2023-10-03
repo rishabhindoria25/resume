@@ -45,23 +45,36 @@ st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centere
 
 
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
-
 image = Image.open('dp.png')
-st.image(image, width=150)
+
+col1, col2 = st.columns(2)
+with col1:
+    st.image(image, width=150)
+with col2:
+    st.download_button(
+        label=" 📄 Download Resume",
+        data=PDFbyte,
+        file_name=resume_file.name,
+        mime="application/octet-stream",
+    )
+     
+     
+# image = Image.open('dp.png')
+# st.image(image, width=150)
 # st.markdown(
 #     f'<a href="data:application/octet-stream;base64,{PDFbyte}" download="{resume_file}" style="color:#16A2CB">📄 Download Resume</a>',
 #     unsafe_allow_html=True
 # )
 # Add a download button for the resume
-st.markdown("## Download Resume")
-st.download_button(
-        label=" 📄 Download Resume",
-        data=PDFbyte,
-        file_name=resume_file,
-        mime="application/octet-stream",
-    )
-# --- SOCIAL LINKS ---
-st.markdown("""---""")
+# st.markdown("## Download Resume")
+# st.download_button(
+#         label=" 📄 Download Resume",
+#         data=PDFbyte,
+#         file_name=resume_file,
+#         mime="application/octet-stream",
+#     )
+# # --- SOCIAL LINKS ---
+# st.markdown("""---""")
 st.markdown("## Find me on")
 st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
