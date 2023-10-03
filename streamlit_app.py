@@ -46,17 +46,25 @@ st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centere
 
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
 image = Image.open('dp.png')
-
-col1, col2, col3= st.columns(3)
-with col1:
-    st.image(image, width=150)
-with col3:
-    st.download_button(
+st.image(image, width=230)
+st.download_button(
         label=" 📄 Download Resume",
         data=PDFbyte,
         file_name=resume_file,
         mime="application/octet-stream",
     )
+
+
+# col1, col2, col3= st.columns(3)
+# with col1:
+#     st.image(image, width=150)
+# with col3:
+#     st.download_button(
+#         label=" 📄 Download Resume",
+#         data=PDFbyte,
+#         file_name=resume_file,
+#         mime="application/octet-stream",
+#     )
      
      
 # image = Image.open('dp.png')
@@ -75,12 +83,6 @@ with col3:
 #     )
 # # --- SOCIAL LINKS ---
 # st.markdown("""---""")
-st.markdown("## Find me on")
-st.write('\n')
-cols = st.columns(len(SOCIAL_MEDIA))
-for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    cols[index].write(f"[{platform}]({link})")
-
 
 st.markdown("""---""")
 st.markdown('## Summary', unsafe_allow_html=True)
@@ -290,6 +292,12 @@ st.markdown("""---""")
 # st.markdown(contact_form, unsafe_allow_html=True)
 
 # st.markdown("""---""")
+st.markdown("## Find me on")
+st.write('\n')
+cols = st.columns(len(SOCIAL_MEDIA))
+for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+    cols[index].write(f"[{platform}]({link})")
+
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
