@@ -192,22 +192,22 @@ st.markdown('''
 - Created Azure computer vision 4.0 diffusion model-based Model-as-a-Service for automatic image analysis, precise product search, and efficient clustering of images, leading to a 35% search precision boost and 40% faster processing
 ''', unsafe_allow_html=True)
 
-txt("**<span style='color:#000000'>Economics of Happiness</span>**, <span style='color:#000000'>Northeastern University</span>, Boston, MA",
+txt("**<span style='color:#000000'>[Economics of Happiness](https://github.com/rishabhindoria25/Economics_of_Happiness)</span>**, <span style='color:#000000'>Northeastern University</span>, Boston, MA",
 'Dec 2022')
 st.markdown('''
 - Conducted exploratory analysis using regression, classification, and AutoML to understand relationships between economic indicators and happiness index across 150 countries
 - Performed hyperparameter tuning and SHAP analysis of economic factors’ impact on happiness, gaining 15% more insights
 ''', unsafe_allow_html=True)
 
-txt("**<span style='color:#000000'>Image Feature Comparison and Ranking, under Dr. Ajitha Shenoy</span>**, <span style='color:#000000'>Manipal Institute of Technology</span>, India",
+txt("**<span style='color:#000000'>[QueryVision](https://github.com/rishabhindoria25/QueryVision), under Dr. Ajitha Shenoy</span>**, <span style='color:#000000'>Manipal Institute of Technology</span>, India",
 'Jan 2017- Jun 2017')
 st.markdown('''
-- Extracted features from query image stored in <span style='color:#000000;font-weight:bold'>AWS s3</span>. Compared and matched the <span style='color:#000000;font-weight:bold'>SURF</span> features and returned top 10 matching images with an accuracy of <span style='color:#000000;font-weight:bold'>92.7%</span>. The developed model was immune to image rotation
-- This tool is used by Manipal Institute of Technology for library catalogue management, saving <span style='color:#000000;font-weight:bold'>1.5</span> hours of librarian work everyday
+- Developed a Python script for image similarity search using a pre-trained VGG16 deep learning model, facilitating the retrieval of visually similar images from a dataset. Achieved a top-10 matching accuracy rate of 95% on a diverse collection of 10,000 book cover images.
+- Implemented feature extraction and cosine similarity calculation techniques, processing and analyzing a dataset of over 10,000 images with an average query time of under 1 second per image. Demonstrated strong analytical and machine learning skills in the context of computer vision, resulting in improved search efficiency and user experience. 
 ''', unsafe_allow_html=True)
 
 st.markdown("""---""")
-txt("**<span style='color:#000000'>AndroXmeda</span>**, *<span style='color:#000000'>Northeastern University</span>*, Boston, MA",
+txt("**<span style='color:#000000'>[AndroXmeda](https://github.com/AndroXmeda)</span>**, *<span style='color:#000000'>Northeastern University</span>*, Boston, MA",
 'Jan 2023 - Apr 2023')
 st.markdown('''
 - Modeled a REST API with <span style='color:#000000;font-weight:bold'>NodeJS, Express, Postgres, Bcrypt and Sequelize ORM</span> for a Full-Stack application in ReactJS
