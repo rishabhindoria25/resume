@@ -45,30 +45,56 @@ st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centere
 
 
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
+# Load the image
 image = Image.open('dp.png')
+
 # Create a centered container
 container = st.container()
 
-# Place the image inside the centered container
+# Place the image and the "Download Resume" button inside the centered container
 with container:
+    # Align items horizontally in the center
+    st.write('<div style="display: flex; justify-content: center;">', unsafe_allow_html=True)
+
+    # Image
     st.image(image, width=230)
-# st.image(image, width=230)
-# st.download_button(
-#         label=" 📄 Download Resume",
-#         data=PDFbyte,
-#         file_name=resume_file,
-#         mime="application/octet-stream",
-#     )
-st.markdown(
-    """
-    <div style="display: flex; justify-content: center;">
+
+    # Button
+    st.markdown(
+        """
         <button style="background-color: #16A2CB; color: white; padding: 10px 20px; font-size: 18px; border: none; cursor: pointer; border-radius: 5px;">
             📄 Download Resume
         </button>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.write('</div>', unsafe_allow_html=True)
+
+# image = Image.open('dp.png')
+# # Create a centered container
+# container = st.container()
+
+# # Place the image inside the centered container
+# with container:
+#     st.image(image, width=230)
+# # st.image(image, width=230)
+# # st.download_button(
+# #         label=" 📄 Download Resume",
+# #         data=PDFbyte,
+# #         file_name=resume_file,
+# #         mime="application/octet-stream",
+# #     )
+# st.markdown(
+#     """
+#     <div style="display: flex; justify-content: center;">
+#         <button style="background-color: #16A2CB; color: white; padding: 10px 20px; font-size: 18px; border: none; cursor: pointer; border-radius: 5px;">
+#             📄 Download Resume
+#         </button>
+#     </div>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 
 # col1, col2, col3= st.columns(3)
