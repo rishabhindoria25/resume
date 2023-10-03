@@ -146,6 +146,7 @@ txt("**<span style='color:#000000'>Bachelors of Technology</span>** (Information
 st.markdown('''
 ## Skills
 ''')
+st.markdown("""---""")
 txt3("**<span style='color:#000000'>Software Programming and Scripting</span>**", "<span style='color:#000000'>Python,&ensp; Spark,&ensp; Java,&ensp; SQL,&ensp; Kafka,&ensp; Linux,&ensp; Numpy,&ensp; Pandas,&ensp; MATLAB,&ensp; Algorithms</span>")
 txt3("**<span style='color:#000000'>Machine Learning</span>**", "<span style='color:#000000'>Scikit-Learn,&ensp; Multivariate Statistics,&ensp; Supervised/Unsupervised learning,&ensp; Bayesian Models,&ensp; Statistical learning</span>")
 txt3("**<span style='color:#000000'>Deep Learning</span>**", "<span style='color:#000000'>TensorFlow,&ensp; Keras,&ensp; PyCaret,&ensp; PyTorch,&ensp; Natural Language Processing (NLP),&ensp; Large Language Models (LLM),&ensp; Azure Computer vision,&ensp; CNN</span>")
