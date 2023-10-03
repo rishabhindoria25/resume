@@ -136,7 +136,7 @@ st.markdown("""---""")
 txt("**<span style='color:#000000'>Masters of Science</span>** (Information Systems), *<span style='color:#000000'>Northeastern University</span>*, Boston, Massachusetts",
 '2022-2024')
 st.markdown('''
-- GPA: **<span style='color:#000000'>3.76</span>**
+- GPA: **<span style='color:#000000'>3.75</span>**
 ''', unsafe_allow_html=True)
 
 txt("**<span style='color:#000000'>Bachelors of Technology</span>** (Information Technology), *<span style='color:#000000'>Manipal Institute of Technology</span>*, Manipal, India",
@@ -146,14 +146,23 @@ txt("**<span style='color:#000000'>Bachelors of Technology</span>** (Information
 st.markdown('''
 ## Skills
 ''')
-st.markdown("""---""")
-txt3("**<span style='color:#000000'>Language</span>**", "<span style='color:#000000'>Python,&ensp;Javascript,&ensp;Node.js,&ensp;SQL,&ensp;HTML,&ensp;CSS,&ensp;React.js</span>")
-txt3("**<span style='color:#000000'>Database</span>**", "<span style='color:#000000'>InfluxDB, &ensp; MongoDB ,&ensp;  MSSQL , &ensp; Redshift ,&ensp;  DynamoDB</span>")
-txt3("**<span style='color:#000000'>Frameworks</span>**", "<span style='color:#000000'>Pycaret , &ensp; PyTorch , &ensp; Scikit-learn ,&ensp;  Telegraf , &ensp; Flask ,&ensp; streamlit, &ensp;  keras ,  &ensp; Tensorflow</span>")
-txt3("**<span style='color:#000000'>Cloud Tools</span>**", "<span style='color:#000000'>AWS (EC2, S3, RDS, SES, SNS, Route 53, CloudFormation, CloudWatch, Lambda, IoT Core)</span>")
-txt3("**<span style='color:#000000'>Tools</span>**", "<span style='color:#000000'>Postman , &ensp; Docker ,&ensp;  Kubernetes ,&ensp;  VS code</span>")
-txt3("**<span style='color:#000000'>CI/CD</span>**", "<span style='color:#000000'>Git , &ensp; Jenkins , &ensp; Jira , &ensp; XL-Deploy</span>")
-txt3("**<span style='color:#000000'>Data Visualization</span>**", "<span style='color:#000000'> Grafana ,&ensp;  Chart.js , &ensp; Tableau , &ensp; PowerBI</span>")
+txt3("**<span style='color:#000000'>Software Programming and Scripting</span>**", "<span style='color:#000000'>Python,&ensp; Spark,&ensp; Java,&ensp; SQL,&ensp; Kafka,&ensp; Linux,&ensp; Numpy,&ensp; Pandas,&ensp; MATLAB,&ensp; Algorithms</span>")
+txt3("**<span style='color:#000000'>Machine Learning</span>**", "<span style='color:#000000'>Scikit-Learn,&ensp; Multivariate Statistics,&ensp; Supervised/Unsupervised learning,&ensp; Bayesian Models,&ensp; Statistical learning</span>")
+txt3("**<span style='color:#000000'>Deep Learning</span>**", "<span style='color:#000000'>TensorFlow,&ensp; Keras,&ensp; PyCaret,&ensp; PyTorch,&ensp; Natural Language Processing (NLP),&ensp; Large Language Models (LLM),&ensp; Azure Computer vision,&ensp; CNN</span>")
+txt3("**<span style='color:#000000'>Web Development</span>**", "<span style='color:#000000'>Flask,&ensp; Streamlit,&ensp; FastAPI,&ensp; Node.js,&ensp; Express.js,&ensp; React.js,&ensp; Nginx,&ensp; Gunicorn,&ensp; HTTP chunked protocol</span>")
+txt3("**<span style='color:#000000'>Cloud</span>**", "<span style='color:#000000'>AWS (Ec2,&ensp; IoT,&ensp; S3,&ensp; CloudFront,&ensp; Lambda,&ensp; Cloudwatch,&ensp; Redshift),&ensp; GCP,&ensp; Git,&ensp; Airflow,&ensp; Terraform,&ensp; SageMaker</span>")
+txt3("**<span style='color:#000000'>Data Warehouse</span>**", "<span style='color:#000000'>Snowflake,&ensp; Redis,&ensp; Pinecone,&ensp; InfluxDB,&ensp; Telegraf,&ensp; Hadoop,&ensp; Hive,&ensp; Databricks</span>")
+txt3("**<span style='color:#000000'>Data Visualization and Analysis Tools</span>**", "<span style='color:#000000'>PowerBI,&ensp; Tableau,&ensp; ChartJS,&ensp; Grafana Labs,&ensp; MS Excel</span>")
+txt3("**<span style='color:#000000'>Business Skills</span>**", "<span style='color:#000000'>Agile standup,&ensp; Decision-making,&ensp; Attention-to-detail,&ensp; Fintech</span>")
+
+# st.markdown("""---""")
+# txt3("**<span style='color:#000000'>Software Programming and Scripting</span>**", "<span style='color:#000000'>Python,&ensp;Javascript,&ensp;Node.js,&ensp;SQL,&ensp;HTML,&ensp;CSS,&ensp;React.js</span>")
+# txt3("**<span style='color:#000000'>Database</span>**", "<span style='color:#000000'>InfluxDB, &ensp; MongoDB ,&ensp;  MSSQL , &ensp; Redshift ,&ensp;  DynamoDB</span>")
+# txt3("**<span style='color:#000000'>Frameworks</span>**", "<span style='color:#000000'>Pycaret , &ensp; PyTorch , &ensp; Scikit-learn ,&ensp;  Telegraf , &ensp; Flask ,&ensp; streamlit, &ensp;  keras ,  &ensp; Tensorflow</span>")
+# txt3("**<span style='color:#000000'>Cloud Tools</span>**", "<span style='color:#000000'>AWS (EC2, S3, RDS, SES, SNS, Route 53, CloudFormation, CloudWatch, Lambda, IoT Core)</span>")
+# txt3("**<span style='color:#000000'>Tools</span>**", "<span style='color:#000000'>Postman , &ensp; Docker ,&ensp;  Kubernetes ,&ensp;  VS code</span>")
+# txt3("**<span style='color:#000000'>CI/CD</span>**", "<span style='color:#000000'>Git , &ensp; Jenkins , &ensp; Jira , &ensp; XL-Deploy</span>")
+# txt3("**<span style='color:#000000'>Data Visualization</span>**", "<span style='color:#000000'> Grafana ,&ensp;  Chart.js , &ensp; Tableau , &ensp; PowerBI</span>")
 
 #####################
 
@@ -206,7 +215,6 @@ st.markdown('''
 - Implemented feature extraction and cosine similarity calculation techniques, processing and analyzing a dataset of over 10,000 images with an average query time of under 1 second per image. Demonstrated strong analytical and machine learning skills in the context of computer vision, resulting in improved search efficiency and user experience. 
 ''', unsafe_allow_html=True)
 
-st.markdown("""---""")
 txt("**<span style='color:#000000'>[AndroXmeda](https://github.com/AndroXmeda)</span>**, *<span style='color:#000000'>Northeastern University</span>*, Boston, MA",
 'Jan 2023 - Apr 2023')
 st.markdown('''
@@ -214,13 +222,6 @@ st.markdown('''
 - Deployed the REST API on AWS CloudFormation using <span style='color:#000000;font-weight:bold'>S3, RDS and EC2</span> using a custom AMI built using Packer
 - Modeled custom <span style='color:#000000;font-weight:bold'>GitHub Actions</span> to setup CI/CD pipelines for streamlining API delivery with <span style='color:#000000;font-weight:bold'>AWS SES</span> notifications
 ''', unsafe_allow_html=True)
-
-txt("**<span style='color:#000000'>Do My Chores: Microsoft Code.Fun.Do Hackathon</span>**, <span style='color:#000000'>Manipal Institute of Technology</span>, India",
-'Aug 2016')
-st.markdown('''
-- Developed a windows application to help students do or get chores done with an associated payout, cutting down late submissions by <span style='color:#000000;font-weight:bold'>20%</span>. Chores were displayed as markers on google maps
-''', unsafe_allow_html=True)
-
 
 #####################
 # Add social media links
