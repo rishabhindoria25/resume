@@ -345,13 +345,13 @@ st.markdown("""
         <a style="color: #FFFFFF" class="nav-link" href="#education">Education</a>
       </li>
       <li class="nav-item">
+        <a style="color: #FFFFFF" class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
         <a style="color: #FFFFFF" class="nav-link" href="#work-experience">Work Experience</a>
       </li>
       <li class="nav-item">
         <a style="color: #FFFFFF" class="nav-link" href="#projects">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a style="color: #FFFFFF" class="nav-link" href="#social-media">Social Media</a>
       </li>
     </ul>
   </div>
