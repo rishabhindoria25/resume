@@ -572,10 +572,13 @@ st.download_button(
     mime="application/octet-stream",
 )
 
-st.write("Email", Email)
-cols = st.columns(len(SOCIAL_MEDIA))
+# st.write("Email", Email)
+st.write("Email",Email)
+cols = st.columns(len(SOCIAL_MEDIA)+1)
+with cols[0]:
+  st.write("Email",Email)
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    with cols[index].container():
+    with cols[index+1].container():
         st.markdown(f"<p style='text-align:center'><a href='{link}'>{platform}</a></p>", unsafe_allow_html=True)
 
 # Summary
