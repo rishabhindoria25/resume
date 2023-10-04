@@ -575,12 +575,11 @@ st.download_button(
 # st.write("Email", Email)
 # st.write("Email",Email)
 cols = st.columns(len(SOCIAL_MEDIA)+1)
-with cols[0]:
-  st.write([Email]("indoria.r@northeastern.edu"))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    with cols[index+1].container():
+    with cols[index].container():
         st.markdown(f"<p style='text-align:center'><a href='{link}'>{platform}</a></p>", unsafe_allow_html=True)
-
+with cols[3]:
+  st.write(Email)
 # Summary
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
