@@ -580,7 +580,8 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     with cols[index].container():
         st.markdown(f"<p style='text-align:center'><a href='{link}'>{platform}</a></p>", unsafe_allow_html=True)
 with cols[3]:
-  st.write(Email)
+  # st.write(Email)
+  st.markdown(f"<a href='mailto:{Email}'>Email</a>", unsafe_allow_html=True)
 
 st.markdown("""---""")
 # Summary
