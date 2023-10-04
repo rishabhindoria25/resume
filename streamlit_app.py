@@ -322,17 +322,17 @@ image = Image.open("icon.jpg")
 profile_pic = Image.open('dp.png')
 resume_file = "RishabhIndoria_Resume.pdf"
 Email = "indoria.r@northeastern.edu"
+
 SOCIAL_MEDIA = {
     "LinkedIn": "https://linkedin.com/in/rishabhindoria/",
     "GitHub": "https://github.com/rishabhindoria25",
     "Kaggle": "https://www.kaggle.com/rishabhindoria",
 }
 
-# Load the resume PDF as bytes
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
-# Set Streamlit page configuration
+# Page Configuration
 st.set_page_config(
     page_title="Rishabh Indoria",
     page_icon=image,
@@ -349,7 +349,8 @@ st.download_button(
     file_name=resume_file,
     mime="application/octet-stream",
 )
-st.write("Email:", Email)
+
+st.write("Email", Email)
 
 # Summary
 st.markdown('## Summary', unsafe_allow_html=True)
@@ -422,7 +423,9 @@ def txt4(a, b, c):
         st.markdown(c, unsafe_allow_html=True)
 
 # Career Snapshot
-st.markdown('## Career-snapshot')
+st.markdown('''
+## Career-snapshot
+''')
 st.markdown("""---""")
 with st.spinner(text="Building line"):
     with open('timeline.json', "r") as f:
@@ -430,19 +433,21 @@ with st.spinner(text="Building line"):
         timeline(data, height=500)
 
 # Education
-st.markdown('## Education')
+st.markdown('''
+## Education
+''')
 st.markdown("""---""")
-txt("**<span style='color:#000000'>Masters of Science</span>** (Information Systems), *<span style='color:#000000'>Northeastern University</span>*, Boston, Massachusetts",
-'2022-2024')
+txt("**<span style='color:#000000'>Masters of Science</span>** (Information Systems), *<span style='color:#000000'>Northeastern University</span>*, Boston, Massachusetts", '2022-2024')
 st.markdown('''
 - GPA: **<span style='color:#000000'>3.75</span>**
 ''', unsafe_allow_html=True)
 
-txt("**<span style='color:#000000'>Bachelors of Technology</span>** (Information Technology), *<span style='color:#000000'>Manipal Institute of Technology</span>*, Manipal, India",
-'2013-2017')
+txt("**<span style='color:#000000'>Bachelors of Technology</span>** (Information Technology), *<span style='color:#000000'>Manipal Institute of Technology</span>*, Manipal, India", '2013-2017')
 
 # Skills
-st.markdown('## Skills')
+st.markdown('''
+## Skills
+''')
 st.markdown("""---""")
 txt3("**<span style='color:#000000'>Software Programming and Scripting</span>**", "<span style='color:#000000'>Python,&ensp; Spark,&ensp; Java,&ensp; SQL,&ensp; Kafka,&ensp; Linux,&ensp; Numpy,&ensp; Pandas,&ensp; MATLAB,&ensp; Algorithms</span>")
 txt3("**<span style='color:#000000'>Machine Learning</span>**", "<span style='color:#000000'>Scikit-Learn,&ensp; Multivariate Statistics,&ensp; Supervised/Unsupervised learning,&ensp; Bayesian Models,&ensp; Statistical learning</span>")
@@ -454,10 +459,11 @@ txt3("**<span style='color:#000000'>Data Visualization and Analysis Tools</span>
 txt3("**<span style='color:#000000'>Business Skills</span>**", "<span style='color:#000000'>Agile standup,&ensp; Decision-making,&ensp; Attention-to-detail,&ensp; Fintech</span>")
 
 # Work Experience
-st.markdown('## Work Experience')
+st.markdown('''
+## Work Experience
+''')
 st.markdown("""---""")
-txt("**<span style='color:#000000'>Lead Data Scientist</span>**, *<span style='color:#000000'>Urja.io</span>*, India",
-'2021-2022')
+txt("**<span style='color:#000000'>Lead Data Scientist</span>**, *<span style='color:#000000'>Urja.io</span>*, India", '2021-2022')
 st.markdown('''
 - Spearheaded the development team in creating an analytics dashboard platform, resulting in a 25% increase in client engagement
 - Achieved a 23% cost reduction by delivering a 94% accurate machinery failure prediction using fbprophet time series forecasting
@@ -466,8 +472,7 @@ st.markdown('''
 - Saved 10 person-hours biweekly by efficiently communicating A/B test results to stakeholders via concise, automated reports
 ''', unsafe_allow_html=True)
 
-txt("**<span style='color:#000000'>Software Engineer</span>**, *<span style='color:#000000'>Société Générale</span>*, India",
-'2017-2020')
+txt("**<span style='color:#000000'>Software Engineer</span>**, *<span style='color:#000000'>Société Générale</span>*, India", '2017-2020')
 st.markdown('''
 - Realized a 20% cost reduction and accelerated module implementation by 30% through streamlined REST API development and global Infrastructure as Code deployment using Terraform, Packer AMI, and Gitlab CI/CD
 - Enhanced fraud detection by 17% by applying predictive modeling techniques to detect irregular transaction volume changes
@@ -475,32 +480,30 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 
 # Projects
-st.markdown('## Projects')
+st.markdown('''
+## Projects
+''')
 st.markdown("""---""")
-txt("**<span style='color:#000000'>[ImagiGEN](https://github.com/orgs/ImagiGEN/repositories)</span>**, *<span style='color:#000000'>Northeastern University</span>*, Boston, MA",
-'May 2023 - Aug 2023')
+txt("**<span style='color:#000000'>[ImagiGEN](https://github.com/orgs/ImagiGEN/repositories)</span>**, *<span style='color:#000000'>Northeastern University</span>*, Boston, MA", 'May 2023 - Aug 2023')
 st.markdown('''
 - Developed an emotion-aware audio journaling app with voice tone analysis for precise emotional detection. Integrated mood chart visualization and prompt engineering to achieve a 20% increase in user retention
 - Led cross-functional teams in creating a contextual search tool for financial researchers, introducing vector similarity, traditional filters, and hybrid search approaches to enhance information retrieval speed by 50% with greater context for improved insights
 - Created Azure computer vision 4.0 diffusion model-based Model-as-a-Service for automatic image analysis, precise product search, and efficient clustering of images, leading to a 35% search precision boost and 40% faster processing
 ''', unsafe_allow_html=True)
 
-txt("**<span style='color:#000000'>[Economics of Happiness](https://github.com/rishabhindoria25/Economics_of_Happiness)</span>**, <span style='color:#000000'>Northeastern University</span>, Boston, MA",
-'Dec 2022')
+txt("**<span style='color:#000000'>[Economics of Happiness](https://github.com/rishabhindoria25/Economics_of_Happiness)</span>**, <span style='color:#000000'>Northeastern University</span>, Boston, MA", 'Dec 2022')
 st.markdown('''
 - Conducted exploratory analysis using regression, classification, and AutoML to understand relationships between economic indicators and happiness index across 150 countries
 - Performed hyperparameter tuning and SHAP analysis of economic factors’ impact on happiness, gaining 15% more insights
 ''', unsafe_allow_html=True)
 
-txt("**<span style='color:#000000'>[QueryVision](https://github.com/rishabhindoria25/QueryVision), under Dr. Ajitha Shenoy</span>**, <span style='color:#000000'>Manipal Institute of Technology</span>, India",
-'Jan 2017- Jun 2017')
+txt("**<span style='color:#000000'>[QueryVision](https://github.com/rishabhindoria25/QueryVision), under Dr. Ajitha Shenoy</span>**, <span style='color:#000000'>Manipal Institute of Technology</span>, India", 'Jan 2017- Jun 2017')
 st.markdown('''
 - Developed a Python script for image similarity search using a pre-trained VGG16 deep learning model, facilitating the retrieval of visually similar images from a dataset. Achieved a top-10 matching accuracy rate of 95% on a diverse collection of 10,000 book cover images.
 - Implemented feature extraction and cosine similarity calculation techniques, processing and analyzing a dataset of over 10,000 images with an average query time of under 1 second per image. Demonstrated strong analytical and machine learning skills in the context of computer vision, resulting in improved search efficiency and user experience. 
 ''', unsafe_allow_html=True)
 
-txt("**<span style='color:#000000'>[AndroXmeda](https://github.com/AndroXmeda)</span>**, *<span style='color:#000000'>Northeastern University</span>*, Boston, MA",
-'Jan 2023 - Apr 2023')
+txt("**<span style='color:#000000'>[AndroXmeda](https://github.com/AndroXmeda)</span>**, *<span style='color:#000000'>Northeastern University</span>*, Boston, MA", 'Jan 2023 - Apr 2023')
 st.markdown('''
 - Modeled a REST API with <span style='color:#000000;font-weight:bold'>NodeJS, Express, Postgres, Bcrypt and Sequelize ORM</span> for a Full-Stack application in ReactJS
 - Deployed the REST API on AWS CloudFormation using <span style='color:#000000;font-weight:bold'>S3, RDS and EC2</span> using a custom AMI built using Packer
@@ -515,15 +518,14 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     with cols[index].container():
         st.markdown(f"<p style='text-align:center'><a href='{link}'>{platform}</a></p>", unsafe_allow_html=True)
 
-# st.footer()
+# Footer
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
 hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            .stApp { bottom: 105px; }
-            </style>
-            """
+<style>
+#MainMenu {visibility: hidden;}
+.stApp { bottom: 105px; }
+</style>
+"""
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
