@@ -4,6 +4,7 @@ from PIL import Image
 image = Image.open("icon.jpg")
 profile_pic = Image.open('dp.png')
 resume_file = "RishabhIndoria_Resume.pdf"
+Email = "indoria.r@northeastern.edu",
 SOCIAL_MEDIA = {
     "Email": "indoria.r@northeastern.edu",
     "LinkedIn": "https://linkedin.com/in/rishabhindoria/",
@@ -40,6 +41,8 @@ with container:
     )
 
     st.write('</div>', unsafe_allow_html=True)
+
+st.write(Email)
 
 
 # st.markdown("""---""")
@@ -249,7 +252,7 @@ with open("style.css") as f:
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
+            footer {visibility: ;}
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
