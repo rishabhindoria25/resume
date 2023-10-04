@@ -30,7 +30,7 @@ st.set_page_config(
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
 st.image(profile_pic, width=230)
 st.download_button(
-    label=" 📄 Download Resume",
+    label=" 📄 Resume",
     data=PDFbyte,
     file_name=resume_file,
     mime="application/octet-stream",
@@ -50,7 +50,7 @@ st.markdown("""---""")
 st.markdown('## Summary', unsafe_allow_html=True)
 st.markdown("""---""")
 st.info('''
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
 \nI am a highly accomplished data scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and cost-effective manner, utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and commitment to excellence in both my coursework and various work. I am eager to continue this level of performance in future projects, utilizing diverse models, frameworks, and data.
 ''')
 
