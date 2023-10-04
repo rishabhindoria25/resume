@@ -17,29 +17,35 @@ st.set_page_config(page_title="Rishabh Indoria", page_icon=image, layout="center
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
 # Load the image
 profile_pic = Image.open('dp.png')
-
-# Create a centered container
-container = st.container()
-
-# Place the image and the "Download Resume" button inside the centered container
-with container:
-    # Align items horizontally in the center
-    st.write('<div style="display: flex; justify-content: center;">', unsafe_allow_html=True)
-
-    # Image
-    st.image(profile_pic, width=230)
-
-    # Button
-    st.markdown(
-        """
-        <button style="background-color: #16A2CB; color: white; padding: 10px 20px; font-size: 18px; border: none; cursor: pointer; border-radius: 5px;">
-            📄 Download Resume
-        </button>
-        """,
-        unsafe_allow_html=True
+st.image(profile_pic, width=230)
+st.download_button(
+        label=" 📄 Download Resume",
+        data=PDFbyte,
+        file_name=resume_file,
+        mime="application/octet-stream",
     )
+# Create a centered container
+# container = st.container()
 
-    st.write('</div>', unsafe_allow_html=True)
+# # Place the image and the "Download Resume" button inside the centered container
+# with container:
+#     # Align items horizontally in the center
+#     st.write('<div style="display: flex; justify-content: center;">', unsafe_allow_html=True)
+
+#     # Image
+#     st.image(profile_pic, width=230)
+
+#     # Button
+#     st.markdown(
+#         """
+#         <button style="background-color: #16A2CB; color: white; padding: 10px 20px; font-size: 18px; border: none; cursor: pointer; border-radius: 5px;">
+#             📄 Download Resume
+#         </button>
+#         """,
+#         unsafe_allow_html=True
+#     )
+
+#     st.write('</div>', unsafe_allow_html=True)
 
 st.write("Email", Email)
 
@@ -48,7 +54,7 @@ st.write("Email", Email)
 st.markdown('## Summary', unsafe_allow_html=True)
 st.markdown("""---""")
 st.info('''
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
 \nI am a highly accomplished data scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and cost-effective manner, utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and commitment to excellence in both my coursework and various work. I am eager to continue this level of performance in future projects, utilizing diverse models, frameworks, and data.
 ''')
 
