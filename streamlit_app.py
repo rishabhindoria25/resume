@@ -340,77 +340,6 @@ st.set_page_config(
     initial_sidebar_state="auto"
 )
 
-st.markdown("""
-<style>
-.navbar {
-    background-color: #021014;
-    color: #FFFFFF;
-    padding: 10px;
-}
-
-.navbar a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.navbar-toggler-icon {
-    color: #FFFFFF;
-}
-
-.navbar-nav .nav-item {
-    margin-right: 15px;
-}
-
-.navbar-nav .nav-item:last-child {
-    margin-right: 0;
-}
-
-.navbar-nav .nav-link {
-    color: #FFFFFF;
-    font-weight: bold;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #16A2CB;
-}
-
-</style>
-""")
-st.markdown("""
-<nav class="navbar fixed-top navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="#">Rishabh Indoria</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#career-snapshot">Career snapshots</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#work-experience">Work Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#social-media">Social Media</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-""")
-
 
 # Header
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
@@ -431,37 +360,38 @@ st.info('''
 \nI am a highly accomplished data scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and cost-effective manner, utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and commitment to excellence in both my coursework and various work. I am eager to continue this level of performance in future projects, utilizing diverse models, frameworks, and data.
 ''')
 
-# # Navigation
-# st.markdown("""
-# <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #021014;">
-#   <a style="color: #16A2CB" class="navbar-brand" target="_blank">Rishabh Indoria</a>
-#   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-#     <span class="navbar-toggler-icon"></span>
-#   </button>
-#   <div class="collapse navbar-collapse" id="navbarNav">
-#     <ul class="navbar-nav">
-#       <li class="nav-item active">
-#         <a style="color: #FFFFFF" class="nav-link disabled" href="/">Home <span class="sr-only">(current)</span></a>
-#       </li>
-#       <li class="nav-item">
-#         <a style="color: #FFFFFF" class="nav-link" href="#career-snapshot">Career snapshots</a>
-#       </li>
-#       <li class="nav-item">
-#         <a style="color: #FFFFFF" class="nav-link" href="#education">Education</a>
-#       </li>
-#       <li class="nav-item">
-#         <a style="color: #FFFFFF" class="nav-link" href="#work-experience">Work Experience</a>
-#       </li>
-#       <li class="nav-item">
-#         <a style="color: #FFFFFF" class="nav-link" href="#projects">Projects</a>
-#       </li>
-#       <li class="nav-item">
-#         <a style="color: #FFFFFF" class="nav-link" href="#social-media">Social Media</a>
-#       </li>
-#     </ul>
-#   </div>
-# </nav>
-# """, unsafe_allow_html=True)
+# Navigation
+st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
+st.markdown("""
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #021014;">
+  <a style="color: #16A2CB" class="navbar-brand" target="_blank">Rishabh Indoria</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a style="color: #FFFFFF" class="nav-link disabled" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a style="color: #FFFFFF" class="nav-link" href="#career-snapshot">Career snapshots</a>
+      </li>
+      <li class="nav-item">
+        <a style="color: #FFFFFF" class="nav-link" href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a style="color: #FFFFFF" class="nav-link" href="#work-experience">Work Experience</a>
+      </li>
+      <li class="nav-item">
+        <a style="color: #FFFFFF" class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a style="color: #FFFFFF" class="nav-link" href="#social-media">Social Media</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+""", unsafe_allow_html=True)
 
 # Custom function for printing text
 def txt(a, b):
