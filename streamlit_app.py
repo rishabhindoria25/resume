@@ -4,9 +4,8 @@ from PIL import Image
 image = Image.open("icon.jpg")
 profile_pic = Image.open('dp.png')
 resume_file = "RishabhIndoria_Resume.pdf"
-Email = "indoria.r@gmail.com",
+Email = "indoria.r@northeastern.edu",
 SOCIAL_MEDIA = {
-    "Email": "indoria.r@northeastern.edu",
     "LinkedIn": "https://linkedin.com/in/rishabhindoria/",
     "GitHub": "https://github.com/rishabhindoria25",
     "Kaggle": "https://www.kaggle.com/rishabhindoria",
