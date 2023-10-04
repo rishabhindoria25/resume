@@ -766,13 +766,13 @@ st.markdown('''
 - Created Azure computer vision 4.0 diffusion model-based Model-as-a-Service for automatic image analysis, precise product search, and efficient clustering of images, leading to a <span style='color:#16A2CB;font-weight:bold'>35%</span> search precision boost and <span style='color:#16A2CB;font-weight:bold'>40%</span> faster processing
 ''', unsafe_allow_html=True)
 
-txt("**<span style='color:#000000'>[Economics of Happiness](https://github.com/rishabhindoria25/Economics_of_Happiness)</span>**, <span style='color:#000000'>Northeastern University</span>, Boston, MA", 'Dec 2022')
+txt("**<span style='color:#000000'>[Economics of Happiness](https://github.com/rishabhindoria25/Economics_of_Happiness)</span>**, *<span style='color:#000000'>Northeastern University</span>*, Boston, MA", 'Dec 2022')
 st.markdown('''
 - Conducted exploratory analysis using regression, classification, and AutoML to understand relationships between economic indicators and happiness index across <span style='color:#16A2CB;font-weight:bold'>150</span> countries
 - Performed hyperparameter tuning and SHAP analysis of economic factors’ impact on happiness, gaining <span style='color:#16A2CB;font-weight:bold'>15%</span> more insights
 ''', unsafe_allow_html=True)
 
-txt("**<span style='color:#000000'>[QueryVision](https://github.com/rishabhindoria25/QueryVision), under Dr. Ajitha Shenoy</span>**, <span style='color:#000000'>Manipal Institute of Technology</span>, India", 'Jan 2017- Jun 2017')
+txt("**<span style='color:#000000'>[QueryVision](https://github.com/rishabhindoria25/QueryVision), under Dr. Ajitha Shenoy</span>**, *<span style='color:#000000'>Manipal Institute of Technology</span>*, India", 'Jan 2017- Jun 2017')
 st.markdown('''
 - Developed a Python script for image similarity search using a pre-trained VGG16 deep learning model, facilitating the retrieval of visually similar images from a dataset. Achieved a top-10 matching accuracy rate of <span style='color:#16A2CB;font-weight:bold'>95%</span> on a diverse collection of <span style='color:#16A2CB;font-weight:bold'>10,000</span> book cover images.
 - Implemented feature extraction and cosine similarity calculation techniques, processing and analyzing a dataset of over <span style='color:#16A2CB;font-weight:bold'>10,000</span> images with an average query time of under <span style='color:#16A2CB;font-weight:bold'>1</span> second per image. Demonstrated strong analytical and machine learning skills in the context of computer vision, resulting in improved search efficiency and user experience. 
@@ -797,10 +797,23 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     with cols[index].container():
         st.markdown(f"<p style='text-align:center'><a href='{link}'>{platform}</a></p>", unsafe_allow_html=True)
 
+# Custom CSS for fixing content at the bottom
+fixed_bottom_style = """
+<style>
+.fixed-bottom {
+    position: fixed;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+</style>
+"""
+st.markdown(fixed_bottom_style, unsafe_allow_html=True)
+
 hide_streamlit_style = """
 <style>
 #MainMenu {visibility: hidden;}
-.stApp { bottom: 105px; }
 </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
