@@ -232,46 +232,6 @@ st.markdown("""---""")
 # st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    if platform.lower() == "email":
-        user_email = st.text_input("Email:", "")
-        if st.button("Send Email"):
-            # Add code to send an email using the user's input
-            # You can use Python libraries like smtplib to send emails
-            # Replace the code below with your email sending logic
-
-            # User's email address and password (you may want to use environment variables for security)
-            user_email = "your_email@example.com"
-            user_password = "your_email_password"
-
-            # Recipient's email address
-            recipient_email = "recipient@example.com"
-
-            # Create a message
-            subject = "Hello from Your Streamlit App"
-            message = "This is the content of your email."
-            msg = MIMEMultipart()
-            msg["From"] = user_email
-            msg["To"] = recipient_email
-            msg["Subject"] = subject
-            msg.attach(MIMEText(message, "plain"))
-
-            # Connect to the SMTP server (e.g., Gmail)
-            smtp_server = "smtp.gmail.com"
-            smtp_port = 587
-            try:
-                server = smtplib.SMTP(smtp_server, smtp_port)
-                server.starttls()
-                server.login(user_email, user_password)
-
-                # Send the email
-                server.sendmail(user_email, recipient_email, msg.as_string())
-                st.write("Email sent successfully!")
-            except Exception as e:
-                st.write("Email could not be sent. Error:", str(e))
-            finally:
-                server.quit()
-        # cols[index].write(f"[{platform}](mailto:{link})")
-    else:
         cols[index].write(f"[{platform}]({link})")
     # cols[index].write(f"[{platform}]({link})")
 # with st.footer("Copyright © 2023 Example"):
