@@ -515,7 +515,7 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     with cols[index].container():
         st.markdown(f"<p style='text-align:center'><a href='{link}'>{platform}</a></p>", unsafe_allow_html=True)
 
-st.footer()
+# st.footer()
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
