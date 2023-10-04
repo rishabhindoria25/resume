@@ -234,7 +234,16 @@ cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
 
+def create_footer():
+    with st.footer("Copyright © 2023 Example"):
 
+        # Create columns for each social media platform
+        cols = st.columns(len(SOCIAL_MEDIA))
+
+        # Iterate over the social media platforms and add links to the footer
+        for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+            cols[index].write(f"[{platform}]({link})")
+create_footer()
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 # st.markdown('![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=https://share.streamlit.io/https://rishabhindoria25-resume-streamlit-app-rxhkpg.streamlit.app&label=VisitorsCount&labelColor=000000&logo=GitHub&logoColor=FFFFFF&color=1D70B8&style=for-the-badge)')
