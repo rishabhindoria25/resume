@@ -581,7 +581,8 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
         st.markdown(f"<p style='text-align:center'><a href='{link}'>{platform}</a></p>", unsafe_allow_html=True)
 with cols[3]:
   st.write(Email)
-  
+
+st.markdown("""---""")
 # Summary
 st.markdown('## Summary', unsafe_allow_html=True)
 st.markdown("""---""")
@@ -798,27 +799,27 @@ st.markdown('''
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
-# Social Media Links
-st.markdown("## Find me on")
-st.markdown("""---""")
-cols = st.columns(len(SOCIAL_MEDIA))
-for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    with cols[index].container():
-        st.markdown(f"<p style='text-align:center'><a href='{link}'>{platform}</a></p>", unsafe_allow_html=True)
+# # Social Media Links
+# st.markdown("## Find me on")
+# st.markdown("""---""")
+# cols = st.columns(len(SOCIAL_MEDIA))
+# for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+#     with cols[index].container():
+#         st.markdown(f"<p style='text-align:center'><a href='{link}'>{platform}</a></p>", unsafe_allow_html=True)
 
-# Custom CSS for fixing content at the bottom
-fixed_bottom_style = """
-<style>
-.fixed-bottom {
-    position: fixed;
-    bottom: 150px;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-</style>
-"""
-st.markdown(fixed_bottom_style, unsafe_allow_html=True)
+# # Custom CSS for fixing content at the bottom
+# fixed_bottom_style = """
+# <style>
+# .fixed-bottom {
+#     position: fixed;
+#     bottom: 150px;
+#     left: 0;
+#     right: 0;
+#     text-align: center;
+# }
+# </style>
+# """
+# st.markdown(fixed_bottom_style, unsafe_allow_html=True)
 
 # hide_streamlit_style = """
 # <style>
