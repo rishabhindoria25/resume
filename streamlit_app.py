@@ -13,7 +13,7 @@ SOCIAL_MEDIA = {
 
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
-st.set_page_config(page_title="Rishabh Indoria", page_icon=image,layout="centered", initial_sidebar_state="auto")
+st.set_page_config(page_title="Rishabh Indoria", page_icon=image, layout="centered", initial_sidebar_state="auto")
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
 # Load the image
 profile_pic = Image.open('dp.png')
@@ -227,13 +227,16 @@ st.markdown('''
 #####################
 # Add social media links
 
-# st.markdown("## Find me on")
-# st.markdown("""---""")
+st.markdown("## Find me on")
+st.markdown("""---""")
 # st.write('\n')
-# cols = st.columns(len(SOCIAL_MEDIA))
-# for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-#     cols[index].write(f"[{platform}]({link})")
-st.footer()
+cols = st.columns(len(SOCIAL_MEDIA))
+for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+    if platform.lower() == "Email":
+        cols[index].write(f"[{platform}](mailto:{link})")
+    else:
+        cols[index].write(f"[{platform}]({link})")
+    # cols[index].write(f"[{platform}]({link})")
 # with st.footer("Copyright © 2023 Example"):
 
 #         # Create columns for each social media platform
