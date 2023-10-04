@@ -42,7 +42,7 @@ with container:
 
     st.write('</div>', unsafe_allow_html=True)
 
-st.write(Email)
+st.write("Email", Email)
 
 
 # st.markdown("""---""")
