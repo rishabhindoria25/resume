@@ -24,28 +24,6 @@ st.download_button(
         file_name=resume_file,
         mime="application/octet-stream",
     )
-# Create a centered container
-# container = st.container()
-
-# # Place the image and the "Download Resume" button inside the centered container
-# with container:
-#     # Align items horizontally in the center
-#     st.write('<div style="display: flex; justify-content: center;">', unsafe_allow_html=True)
-
-#     # Image
-#     st.image(profile_pic, width=230)
-
-#     # Button
-#     st.markdown(
-#         """
-#         <button style="background-color: #16A2CB; color: white; padding: 10px 20px; font-size: 18px; border: none; cursor: pointer; border-radius: 5px;">
-#             📄 Download Resume
-#         </button>
-#         """,
-#         unsafe_allow_html=True
-#     )
-
-#     st.write('</div>', unsafe_allow_html=True)
 
 st.write("Email", Email)
 
@@ -54,9 +32,17 @@ st.write("Email", Email)
 st.markdown('## Summary', unsafe_allow_html=True)
 st.markdown("""---""")
 st.info('''
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
-\nI am a highly accomplished data scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and cost-effective manner, utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and commitment to excellence in both my coursework and various work. I am eager to continue this level of performance in future projects, utilizing diverse models, frameworks, and data.
-''')
+<div style="text-align: center;">
+    <strong>HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?</strong>
+</div>
+<div style="text-align: center;">
+    I am a highly accomplished data scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and cost-effective manner, utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and commitment to excellence in both my coursework and various work. I am eager to continue this level of performance in future projects, utilizing diverse models, frameworks, and data.
+</div>
+''', unsafe_allow_html=True)
+# st.info('''
+# &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
+# \nI am a highly accomplished data scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and cost-effective manner, utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and commitment to excellence in both my coursework and various work. I am eager to continue this level of performance in future projects, utilizing diverse models, frameworks, and data.
+# ''')
 
 #####################
 # Navigation
@@ -240,7 +226,12 @@ st.markdown("""---""")
 # st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-        cols[index].write(f"[{platform}]({link})")
+    with cols[index].container():
+        st.markdown(f"<p style='text-align:center'><a href='{link}'>{platform}</a></p>", unsafe_allow_html=True)
+# cols = st.columns(len(SOCIAL_MEDIA))
+# for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+#         cols[index].write(f"[{platform}]({link})")
+st.footer()
     # cols[index].write(f"[{platform}]({link})")
 # with st.footer("Copyright © 2023 Example"):
 
@@ -257,7 +248,6 @@ with open("style.css") as f:
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
-            footer {visibility: ;}
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
