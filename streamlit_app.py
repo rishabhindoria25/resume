@@ -811,10 +811,10 @@ fixed_bottom_style = """
 """
 st.markdown(fixed_bottom_style, unsafe_allow_html=True)
 
-hide_streamlit_style = """
-<style>
-#MainMenu {visibility: hidden;}
-</style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+# hide_streamlit_style = """
+# <style>
+# #MainMenu {visibility: hidden;}
+# </style>
+# """
+# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
