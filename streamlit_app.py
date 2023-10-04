@@ -256,6 +256,7 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
+
 style = """
 <style>
   #MainMenu {visibility: hidden;}
@@ -301,7 +302,7 @@ myargs = [
     " with ❤️ by ",
     a(_href="https://twitter.com/ChristianKlose3", _target="_blank")("@ChristianKlose3"),
     br(),
-    a(_href="https://buymeacoffee.com/chrischross", img('https://i.imgur.com/thJhzOO.png')),
+    a(_href="https://buymeacoffee.com/chrischross")(img('https://i.imgur.com/thJhzOO.png')),
 ]
 
 for arg in myargs:
