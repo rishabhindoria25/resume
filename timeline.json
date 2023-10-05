@@ -49,20 +49,7 @@
 		},
 		"text": {
 			"headline": "Move to a startup",
-			"text": "After working at a Multi-National Company (Société Générale), I realised, I was ready for higher impact projects and a fast paced environment. I got my chance at Urja.io as a Data Engineer/Scientist role."
-		}
-	}, {
-		"start_date": {
-			"year": "2022",
-			"month": "2"
-		},
-		"media": {
-			"url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8AmniYLIMfmMxXOEt3bBwyxKy_cTAjl_tVg&usqp=CAU",
-			"credit": "https://www.agorapulse.com/social-media-lab/science-instagram-algorithm/"
-		},
-		"text": {
-			"headline": "Got promoted",
-			"text": "I came into limelight within Urja.io, by setting up the complete software pipeline and was promoted to Lead Data Engineer/Scientist."
+			"text": "After working at a Multi-National Company (Société Générale), I realised, I was ready for higher impact projects and a fast paced environment. I got my chance at Urja.io as a Lead Data Scientist."
 		}
 	}, {
 		"start_date": {
@@ -77,5 +64,17 @@
 			"headline": "The American Dream",
 			"text": "Moved to Boston, Massachusetts to pursue a Masters of Science in Information Systems."
 		}
+	}, {
+		"start_date": {
+			"year": "2023",
+			"month": "3"
+		},
+		"media": {
+			"url": "https://www.vecteezy.com/png/18930572-youtube-logo-png-youtube-icon-transparent",
+			"credit": "Urja.io"
+		},
+		"text": {
+			"headline": "Conducted a workshop",
+			"text": "Presented at AI Skunkworks' 'Generative AI Deep Dive' in partnership with the Institute for Experiential AI (<a href='https://www.youtube.com/watch?v=Cf98HE5PRPk'>Watch Video</a>)"		}
 	}]
 }
