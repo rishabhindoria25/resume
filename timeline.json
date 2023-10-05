@@ -70,11 +70,12 @@
 			"month": "3"
 		},
 		"media": {
-			"url": "https://www.vecteezy.com/png/18930572-youtube-logo-png-youtube-icon-transparent",
+			"url": "https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png",
 			"credit": "Urja.io"
 		},
 		"text": {
 			"headline": "Conducted a workshop",
-			"text": "Presented at AI Skunkworks' 'Generative AI Deep Dive' in partnership with the Institute for Experiential AI (<a href='https://www.youtube.com/watch?v=Cf98HE5PRPk'>Watch Video</a>)"		}
+			"text": "Presented at AI Skunkworks' 'Generative AI Deep Dive' in partnership with the Institute for Experiential AI (<a href='https://www.youtube.com/watch?v=Cf98HE5PRPk'>Watch Video</a>)"		
+		}
 	}]
 }
