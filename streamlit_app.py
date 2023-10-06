@@ -42,7 +42,7 @@ st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROW
 # col1, col2, col3 = st.columns(3)
 # with col2:
 #     st.image(profile_pic)
-col1, col2, col3 = st.columns([0.1, 0.7, 2])
+col1, col2, col3 = st.columns([0.05, 1, 2])
 col2.image(profile_pic, use_column_width=True)
 # st.write("""
 #     <div style="display: flex; justify-content: center;">
