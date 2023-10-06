@@ -38,7 +38,7 @@ def img_to_html(img_path):
     )
     return img_html
 
-st.markdown(f"<p style='text-align: center; color: grey;'>"+img_to_html(profile_pic)+"</p>", unsafe_allow_html=True)
+st.markdown(f"<p style='text-align: center;'>"+img_to_html(profile_pic)+"</p>", unsafe_allow_html=True)
 # col1, col2, col3 = st.columns(3)
 
 # with col1:
