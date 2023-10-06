@@ -28,41 +28,8 @@ st.set_page_config(
 
 # Header
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
-# def img_to_bytes(img_path):
-#     img_bytes = Path(img_path).read_bytes()
-#     encoded = base64.b64encode(img_bytes).decode()
-#     return encoded
-# def img_to_html(img_path):
-#     img_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(
-#       img_to_bytes(img_path)
-#     )
-#     return img_html
-
-# st.markdown(f"<p style='text-align: center;'>"+img_to_html(profile_pic)+"</p>", unsafe_allow_html=True)
-# col1, col2, col3 = st.columns(3)
-# with col2:
-#     st.image(profile_pic)
 col1, col2, col3 = st.columns([0.01, 3, 10])
-col2.image(profile_pic, use_column_width=True)
-# st.write("""
-#     <div style="display: flex; justify-content: center;">
-#         <img src="{}" alt="Profile Picture" width="230">
-#     </div>
-# """.format(profile_pic), unsafe_allow_html=True)
-# st.markdown(
-#     f"""
-#     <style>
-#     img {{
-#         text-align: center;
-#         display: block;
-#         margin-left: auto;
-#         margin-right: auto;
-#     }}
-#     </style>
-
-#     {st.image(profile_pic, width=230)}
-# """
-# )
+col2.image(profile_pic, use_column_width=True)\
 st.download_button(
     label=" 📄 Resume",
     data=PDFbyte,
@@ -84,7 +51,7 @@ st.markdown("""---""")
 st.markdown('## Summary', unsafe_allow_html=True)
 st.markdown("""---""")
 st.info('''
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
 \nI am a highly accomplished data scientist with a strong focus on achieving measurable results. I possess extensive experience working within cross-functional teams to achieve organizational objectives. Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and cost-effective manner utilizing my in-depth domain expertise. I have consistently demonstrated exceptional diligence and commitment to excellence in both my coursework and professional work. I am eager to continue this level of performance in future projects, utilizing diverse models, frameworks, and data.
 ''')
 
