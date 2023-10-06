@@ -39,9 +39,11 @@ st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROW
 #     return img_html
 
 # st.markdown(f"<p style='text-align: center;'>"+img_to_html(profile_pic)+"</p>", unsafe_allow_html=True)
-col1, col2, col3 = st.columns(3)
-with col2:
-    st.image(profile_pic)
+# col1, col2, col3 = st.columns(3)
+# with col2:
+#     st.image(profile_pic)
+col1, col2, col3 = st.columns([0.2, 5, 0.2])
+col2.image(profile_pic, use_column_width=True)
 # st.write("""
 #     <div style="display: flex; justify-content: center;">
 #         <img src="{}" alt="Profile Picture" width="230">
