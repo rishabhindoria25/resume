@@ -28,27 +28,20 @@ st.set_page_config(
 
 # Header
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
-def img_to_bytes(img_path):
-    img_bytes = Path(img_path).read_bytes()
-    encoded = base64.b64encode(img_bytes).decode()
-    return encoded
-def img_to_html(img_path):
-    img_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(
-      img_to_bytes(img_path)
-    )
-    return img_html
+# def img_to_bytes(img_path):
+#     img_bytes = Path(img_path).read_bytes()
+#     encoded = base64.b64encode(img_bytes).decode()
+#     return encoded
+# def img_to_html(img_path):
+#     img_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(
+#       img_to_bytes(img_path)
+#     )
+#     return img_html
 
-st.markdown(f"<p style='text-align: center;'>"+img_to_html(profile_pic)+"</p>", unsafe_allow_html=True)
-# col1, col2, col3 = st.columns(3)
-
-# with col1:
-#     st.write(' ')
-
-# with col2:
-#     st.image(profile_pic)
-
-# with col3:
-#     st.write(' ')
+# st.markdown(f"<p style='text-align: center;'>"+img_to_html(profile_pic)+"</p>", unsafe_allow_html=True)
+col1, col2, col3 = st.columns(3)
+with col2:
+    st.image(profile_pic)
 # st.write("""
 #     <div style="display: flex; justify-content: center;">
 #         <img src="{}" alt="Profile Picture" width="230">
