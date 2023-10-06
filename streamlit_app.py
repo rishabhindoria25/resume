@@ -28,11 +28,25 @@ st.set_page_config(
 # Header
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
 # st.image(profile_pic, width=230, use_container_width=True)
-st.write("""
-    <div style="display: flex; justify-content: center;">
-        <img src="{}" alt="Profile Picture" width="230">
-    </div>
-""".format(profile_pic), unsafe_allow_html=True)
+# st.write("""
+#     <div style="display: flex; justify-content: center;">
+#         <img src="{}" alt="Profile Picture" width="230">
+#     </div>
+# """.format(profile_pic), unsafe_allow_html=True)
+st.markdown(
+    f"""
+    <style>
+    img {{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }}
+    </style>
+
+    {st.image(profile_pic, width=230)}
+"""
+)
 st.download_button(
     label=" 📄 Resume",
     data=PDFbyte,
