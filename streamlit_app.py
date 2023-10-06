@@ -10,8 +10,7 @@ Email = "indoria.r@northeastern.edu"
 
 SOCIAL_MEDIA = {
     "LinkedIn": "https://linkedin.com/in/rishabhindoria/",
-    "GitHub": "https://github.com/rishabhindoria25",
-    "Kaggle": "https://www.kaggle.com/rishabhindoria",
+    "GitHub": "https://github.com/rishabhindoria25"
 }
 
 with open(resume_file, "rb") as pdf_file:
