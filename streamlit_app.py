@@ -29,7 +29,7 @@ st.set_page_config(
 # Header
 st.write("# **<span style='color:#000000'>Rishabh Indoria</span>** ~~THE IT CROWD~~", unsafe_allow_html=True)
 col1, col2, col3 = st.columns([0.01, 3, 10])
-col2.image(profile_pic, use_column_width=True)\
+col2.image(profile_pic, use_column_width=True)
 st.download_button(
     label=" 📄 Resume",
     data=PDFbyte,
