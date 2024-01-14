@@ -71,10 +71,10 @@ def display_skills():
         "Cloud and Data Technologies": ["AWS", "GCP", "Azure", "Snowflake", "Hadoop", "Databricks"],
         "Data Visualization and Analysis": ["PowerBI", "Tableau", "ChartJS", "Grafana Labs", "MS Excel"]
     }
-    with st.expander("View Skills"):
-        for category, skills in skills_categories.items():
-            with st.expander(category):
-                st.markdown(", ".join(skills))
+    
+    for category, skills in skills_categories.items():
+        st.subheader(category)
+        st.markdown(", ".join(skills))
 
 def display_work_experience():
     st.subheader('Work Experience')
