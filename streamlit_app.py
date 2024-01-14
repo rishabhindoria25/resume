@@ -81,14 +81,24 @@ def display_skills():
 
 def display_work_experience():
     st.subheader('Work Experience')
-    with st.expander("View Work Experience"):
+
+    # Experience 1 - Lead Data Scientist at Urja.io
+    with st.expander("URJA.IO | Lead Data Scientist (February 2021 - August 2022)"):
         st.markdown("""
-        ### Lead Data Scientist at Urja.io, India (2021-2022)
-        - Spearheaded the development of an analytics dashboard, enhancing client engagement by 25%.
-        - Implemented a machinery failure prediction model, reducing operational costs by 23%.
-        ### Software Engineer at Société Générale, India (2017-2020)
-        - Streamlined REST API development, resulting in 20% cost reduction and 30% faster module implementation.
+        - Spearheaded development team in creating an end-to-end analytical dashboard tool, resulting in a 25% increase in user retention.
+        - Reduced costs by 23% with a 94% accurate machinery-failure prediction system using Facebook Prophet for forecasting.
+        - Streamlined stakeholder communication by 10 hours weekly through efficient Tableau reporting of A/B test progress.
         """)
+
+    # Experience 2 - Data Scientist at Societe Generale Global Solution Centre
+    with st.expander("SOCIETE GENERALE GLOBAL SOLUTION CENTRE | Data Scientist (July 2017 - March 2020)"):
+        st.markdown("""
+        - Enhanced deployment speed by 30% with Infrastructure as Code (IaC) through Terraform and GitHub CI/CD optimizations.
+        - Increased fraud detection in investment banking by 17% using XGBoost models for identifying irregular transaction volumes.
+        - Boosted risk management efficiency by 21% using Isolation Forest to spot high-value transactions exceeding forecasted pricing.
+        - Employed NER and POS tagging techniques to redact financial transcripts, achieving a low error rate of 3.5%.
+        """)
+
 
 def display_summary():
     st.subheader('Summary')
