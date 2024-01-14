@@ -271,8 +271,10 @@ def display_work_experience():
 
 def display_summary():
     st.subheader('Summary')
+    st.markdown("""
+        **HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
+        """)
     st.info('''
-    **HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
     I am a highly accomplished data scientist with a strong focus on achieving measurable results. 
     I possess extensive experience working within cross-functional teams to achieve organizational objectives. 
     Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and 
@@ -419,7 +421,7 @@ st.set_page_config(
 if __name__ == "__main__":
     # create_navbar()
     display_header_and_education()
-    # display_social_media_links()
+    display_social_media_links()
     st.markdown("---")
     display_summary()
     st.markdown("---")
