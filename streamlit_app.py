@@ -31,7 +31,6 @@ def display_header():
         file_name=RESUME_FILE,
         mime="application/pdf",
     )
-# Custom navbar using HTML and CSS
 def custom_navbar():
     navbar_html = """
     <style>
@@ -42,6 +41,8 @@ def custom_navbar():
         top: 0;
         width: 100%;
         z-index: 999;
+        display: flex;
+        justify-content: space-around;  /* Distribute space evenly around navbar items */
     }
 
     .navbar a {
@@ -51,6 +52,7 @@ def custom_navbar():
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+        transition: background-color 0.3s;  /* Smooth transition for hover effect */
     }
 
     .navbar a:hover {
@@ -64,6 +66,8 @@ def custom_navbar():
         <a href="#skills">Skills</a>
         <a href="#work-experience">Work Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#summary">Summary</a>
+        <a href="#footer">Footer</a>
     </div>
     """
     st.markdown(navbar_html, unsafe_allow_html=True)
