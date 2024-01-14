@@ -31,10 +31,11 @@ def read_file(file_path):
 #         file_name=RESUME_FILE,
 #         mime="application/pdf",
 #     )
-def display_header():
-    col1, col2, col3 = st.columns([1,2,1])
 
-    with col2:
+def display_header():
+    col1, col2 = st.columns([3, 2])
+
+    with col1:
         profile_pic = PROFILE_PIC_PATH
         st.image(profile_pic, width=150)
         st.title("Rishabh Indoria")
@@ -45,14 +46,20 @@ def display_header():
             mime="application/pdf",
         )
 
+    with col2:
+        st.markdown("## Social Media")
+        for platform, link in SOCIAL_MEDIA.items():
+            st.markdown(f"- [{platform}]({link})")
+        st.markdown(f"- [Email](mailto:{EMAIL})")
 
-def display_social_media_links():
-    cols = st.columns(len(SOCIAL_MEDIA) + 1)
-    for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-        with cols[index]:
-            st.markdown(f"[{platform}]({link})")
-    with cols[-1]:
-        st.markdown(f"[Email](mailto:{EMAIL})")
+
+# def display_social_media_links():
+#     cols = st.columns(len(SOCIAL_MEDIA) + 1)
+#     for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+#         with cols[index]:
+#             st.markdown(f"[{platform}]({link})")
+#     with cols[-1]:
+#         st.markdown(f"[Email](mailto:{EMAIL})")
 
 def display_career_snapshot():
     st.subheader('Career Snapshot')
@@ -316,7 +323,7 @@ st.set_page_config(
 if __name__ == "__main__":
     # create_navbar()
     display_header()
-    display_social_media_links()
+    # display_social_media_links()
     st.markdown("---")
     display_summary()
     st.markdown("---")
