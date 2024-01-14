@@ -63,8 +63,6 @@ def display_education():
 
 def display_skills():
     st.subheader('Skills')
-
-    # Define the skills categories and skills
     skills_categories = {
         "Programming and Development": ["Python", "Java", "SQL", "Spark", "Kafka", "Linux", "Numpy", "Pandas", "MATLAB"],
         "Machine Learning": ["Scikit-Learn", "Multivariate Statistics", "Supervised/Unsupervised Learning", "Bayesian Models"],
@@ -73,12 +71,13 @@ def display_skills():
         "Cloud and Data Technologies": ["AWS", "GCP", "Azure", "Snowflake", "Hadoop", "Databricks"],
         "Data Visualization and Analysis": ["PowerBI", "Tableau", "ChartJS", "Grafana Labs", "MS Excel"]
     }
+    
+    # Transforming the dictionary into a DataFrame
+    data = [{"Category": category, "Skills": ", ".join(skills)} for category, skills in skills_categories.items()]
+    df = pd.DataFrame(data)
 
-    # Convert the dictionary to a DataFrame for a tabular format
-    df_skills = pd.DataFrame(dict([(k, pd.Series(v)) for k, v in skills_categories.items()]))
-
-    # Display the DataFrame as a table
-    st.table(df_skills)
+    # Displaying the DataFrame as a table
+    st.table(df)
 
 def display_work_experience():
     st.subheader('Work Experience')
