@@ -31,43 +31,34 @@ def display_header():
         file_name=RESUME_FILE,
         mime="application/pdf",
     )
-def custom_navbar():
+
+def create_navbar():
+    # HTML for the navbar
     navbar_html = """
     <style>
-    .navbar {
-        overflow: hidden;
-        background-color: #333;  /* Change background color */
+    #navbar {
         position: fixed;
         top: 0;
-        width: 100%;
-        z-index: 999;
-        display: flex;
-        justify-content: space-around;  /* Distribute space evenly around navbar items */
-    }
-
-    .navbar a {
-        float: left;
-        display: block;
-        color: white;  /* Change text color */
+        left: 0;
+        right: 0;
+        background-color: #4CAF50;
+        color: red;
         text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        transition: background-color 0.3s;  /* Smooth transition for hover effect */
+        z-index: 999;
     }
-
-    .navbar a:hover {
-        background: #ddd;  /* Change hover color */
-        color: black;  /* Change text color for hover */
+    #navbar a {
+        padding: 14px 20px;
+        text-decoration: none;
+        color: white;
     }
     </style>
-    <div class="navbar">
-        <a href="#career-snapshots">Career Snapshots</a>
+    <div id="navbar">
+        <a href="#home">Home</a>
+        <a href="#career-snapshot">Career Snapshot</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#work-experience">Work Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#summary">Summary</a>
-        <a href="#footer">Footer</a>
     </div>
     """
     st.markdown(navbar_html, unsafe_allow_html=True)
@@ -79,18 +70,6 @@ def display_social_media_links():
             st.markdown(f"[{platform}]({link})")
     with cols[-1]:
         st.markdown(f"[Email](mailto:{EMAIL})")
-
-def display_navigation():
-    nav_items = ["Career Snapshots", "Education", "Skills", "Work Experience", "Projects"]
-    nav_links = ' | '.join([f"[{item}](#{item.lower().replace(' ', '-')})" for item in nav_items])
-    st.markdown(nav_links, unsafe_allow_html=True)
-
-# def display_navigation():
-#     with st.sidebar:
-#         st.markdown("## Navigation")
-#         nav_items = ["Career Snapshots", "Education", "Skills", "Work Experience", "Projects"]
-#         for item in nav_items:
-#             st.markdown(f"[{item}](#{item.lower().replace(' ', '-')})")
 
 def display_career_snapshot():
     st.subheader('Career Snapshot')
@@ -258,11 +237,10 @@ st.set_page_config(
 )
 
 if __name__ == "__main__":
-    custom_navbar()
+    create_navbar()
     display_header()
     display_social_media_links()
     st.markdown("---")
-    # display_navigation()
     display_summary()
     display_career_snapshot()
     display_skills()
