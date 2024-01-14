@@ -21,19 +21,9 @@ def read_file(file_path):
     with open(file_path, "rb") as file:
         return file.read()
 
-# def display_header():
-#     profile_pic = PROFILE_PIC_PATH
-#     st.image(profile_pic, width=150)
-#     st.title("Rishabh Indoria")
-#     st.download_button(
-#         label="Download Resume",
-#         data=read_file(RESUME_FILE),
-#         file_name=RESUME_FILE,
-#         mime="application/pdf",
-#     )
 
-def display_header():
-    col1, col2 = st.columns([3, 2])
+def display_header_and_education():
+    col1, col2 = st.columns([1, 2])
 
     with col1:
         profile_pic = PROFILE_PIC_PATH
@@ -47,25 +37,85 @@ def display_header():
         )
 
     with col2:
-        st.markdown("## Social Media")
-        for platform, link in SOCIAL_MEDIA.items():
-            st.markdown(f"- [{platform}]({link})")
-        st.markdown(f"- [Email](mailto:{EMAIL})")
+        st.subheader('Education')
+        st.markdown("""
+        <style>
+        .education-info {
+            font-size: 16px;
+        }
+        .institution {
+            font-weight: bold;
+        }
+        .degree {
+            font-style: italic;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+
+        st.markdown("""
+        <div class="education-info">
+            <ul>
+                <li>
+                    <span class="institution">Northeastern University, Boston, Massachusetts</span><br>
+                    <span class="degree">Masters of Science (Information Systems)</span><br>
+                    2022 - 2024<br>
+                    GPA: 3.75
+                </li>
+                <li>
+                    <span class="institution">Manipal Institute of Technology, Manipal, India</span><br>
+                    <span class="degree">Bachelors of Technology (Information Technology)</span><br>
+                    2013 - 2017
+                </li>
+            </ul>
+        </div>
+        """, unsafe_allow_html=True)
+
+# def display_header():
+#     profile_pic = PROFILE_PIC_PATH
+#     st.image(profile_pic, width=150)
+#     st.title("Rishabh Indoria")
+#     st.download_button(
+#         label="Download Resume",
+#         data=read_file(RESUME_FILE),
+#         file_name=RESUME_FILE,
+#         mime="application/pdf",
+#     )
+
+# def display_header():
+#     col1, col2 = st.columns([3, 2])
+
+#     with col1:
+#         profile_pic = PROFILE_PIC_PATH
+#         st.image(profile_pic, width=150)
+#         st.title("Rishabh Indoria")
+#         st.download_button(
+#             label="Download Resume",
+#             data=read_file(RESUME_FILE),
+#             file_name=RESUME_FILE,
+#             mime="application/pdf",
+#         )
+
+#     with col2:
+#         st.markdown("## Social Media")
+#         for platform, link in SOCIAL_MEDIA.items():
+#             st.markdown(f"- [{platform}]({link})")
+#         st.markdown(f"- [Email](mailto:{EMAIL})")
 
 
-# def display_social_media_links():
-#     cols = st.columns(len(SOCIAL_MEDIA) + 1)
-#     for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-#         with cols[index]:
-#             st.markdown(f"[{platform}]({link})")
-#     with cols[-1]:
-#         st.markdown(f"[Email](mailto:{EMAIL})")
+def display_social_media_links():
+    cols = st.columns(len(SOCIAL_MEDIA) + 1)
+    for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+        with cols[index]:
+            st.markdown(f"[{platform}]({link})")
+    with cols[-1]:
+        st.markdown(f"[Email](mailto:{EMAIL})")
 
 def display_career_snapshot():
     st.subheader('Career Snapshot')
     with open('timeline.json', "r") as f:
         data = f.read()
         timeline(data, height=400)
+
 def display_education():
     st.subheader('Education')
 
@@ -322,7 +372,7 @@ st.set_page_config(
 
 if __name__ == "__main__":
     # create_navbar()
-    display_header()
+    display_header_and_education()
     # display_social_media_links()
     st.markdown("---")
     display_summary()
@@ -330,8 +380,8 @@ if __name__ == "__main__":
     display_career_snapshot()
     st.markdown("---")
     display_skills()
-    st.markdown("---")
-    display_education()
+    # st.markdown("---")
+    # display_education()
     st.markdown("---")
     display_work_experience()
     st.markdown("---")
