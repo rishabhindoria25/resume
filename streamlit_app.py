@@ -49,7 +49,7 @@ def create_navbar():
     #navbar a {
         padding: 14px 20px;
         text-decoration: none;
-        color: white;
+        color: blue;
     }
     </style>
     <div id="navbar">
