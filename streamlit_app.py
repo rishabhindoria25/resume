@@ -149,6 +149,7 @@ def display_header_and_education():
 
 
 def display_social_media_links():
+    st.subheader('Social Media')
     cols = st.columns(len(SOCIAL_MEDIA) + 1)
     for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
         with cols[index]:
