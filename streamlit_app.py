@@ -21,11 +21,10 @@ def read_file(file_path):
     with open(file_path, "rb") as file:
         return file.read()
 
-
 def display_header_and_education():
-    col1, col2 = st.columns([1, 2])
+    col1, col2, col3, col4, col5 = st.columns([1, 2, 1, 2, 1])
 
-    with col1:
+    with col2:
         profile_pic = PROFILE_PIC_PATH
         st.image(profile_pic, width=150)
         st.title("Rishabh Indoria")
@@ -36,7 +35,7 @@ def display_header_and_education():
             mime="application/pdf",
         )
 
-    with col2:
+    with col4:
         st.subheader('Education')
         st.markdown("""
         <style>
@@ -69,6 +68,53 @@ def display_header_and_education():
             </ul>
         </div>
         """, unsafe_allow_html=True)
+# def display_header_and_education():
+#     col1, col2 = st.columns([1, 2])
+
+#     with col1:
+#         profile_pic = PROFILE_PIC_PATH
+#         st.image(profile_pic, width=150)
+#         st.title("Rishabh Indoria")
+#         st.download_button(
+#             label="Download Resume",
+#             data=read_file(RESUME_FILE),
+#             file_name=RESUME_FILE,
+#             mime="application/pdf",
+#         )
+
+#     with col2:
+#         st.subheader('Education')
+#         st.markdown("""
+#         <style>
+#         .education-info {
+#             font-size: 16px;
+#         }
+#         .institution {
+#             font-weight: bold;
+#         }
+#         .degree {
+#             font-style: italic;
+#         }
+#         </style>
+#         """, unsafe_allow_html=True)
+
+#         st.markdown("""
+#         <div class="education-info">
+#             <ul>
+#                 <li>
+#                     <span class="institution">Northeastern University, Boston, Massachusetts</span><br>
+#                     <span class="degree">Masters of Science (Information Systems)</span><br>
+#                     2022 - 2024<br>
+#                     GPA: 3.75
+#                 </li>
+#                 <li>
+#                     <span class="institution">Manipal Institute of Technology, Manipal, India</span><br>
+#                     <span class="degree">Bachelors of Technology (Information Technology)</span><br>
+#                     2013 - 2017
+#                 </li>
+#             </ul>
+#         </div>
+#         """, unsafe_allow_html=True)
 
 # def display_header():
 #     profile_pic = PROFILE_PIC_PATH
