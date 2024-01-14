@@ -196,8 +196,8 @@ if __name__ == "__main__":
     display_navigation()
     display_summary()
     display_career_snapshot()
-    display_education()
     display_skills()
+    display_education()
     display_work_experience()
     display_projects()
 
