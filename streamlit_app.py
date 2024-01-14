@@ -31,6 +31,42 @@ def display_header():
         file_name=RESUME_FILE,
         mime="application/pdf",
     )
+# Custom navbar using HTML and CSS
+def custom_navbar():
+    navbar_html = """
+    <style>
+    .navbar {
+        overflow: hidden;
+        background-color: #333;  /* Change background color */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;  /* Change text color */
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        background: #ddd;  /* Change hover color */
+        color: black;  /* Change text color for hover */
+    }
+    </style>
+    <div class="navbar">
+        <a href="#career-snapshots">Career Snapshots</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#work-experience">Work Experience</a>
+        <a href="#projects">Projects</a>
+    </div>
+    """
+    st.markdown(navbar_html, unsafe_allow_html=True)
 
 def display_social_media_links():
     cols = st.columns(len(SOCIAL_MEDIA) + 1)
@@ -218,10 +254,11 @@ st.set_page_config(
 )
 
 if __name__ == "__main__":
+    custom_navbar()
     display_header()
     display_social_media_links()
     st.markdown("---")
-    display_navigation()
+    # display_navigation()
     display_summary()
     display_career_snapshot()
     display_skills()
