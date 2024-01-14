@@ -41,11 +41,16 @@ def display_social_media_links():
         st.markdown(f"[Email](mailto:{EMAIL})")
 
 def display_navigation():
-    with st.sidebar:
-        st.markdown("## Navigation")
-        nav_items = ["Career Snapshots", "Education", "Skills", "Work Experience", "Projects"]
-        for item in nav_items:
-            st.markdown(f"[{item}](#{item.lower().replace(' ', '-')})")
+    nav_items = ["Career Snapshots", "Education", "Skills", "Work Experience", "Projects"]
+    nav_links = ' | '.join([f"[{item}](#{item.lower().replace(' ', '-')})" for item in nav_items])
+    st.markdown(nav_links, unsafe_allow_html=True)
+
+# def display_navigation():
+#     with st.sidebar:
+#         st.markdown("## Navigation")
+#         nav_items = ["Career Snapshots", "Education", "Skills", "Work Experience", "Projects"]
+#         for item in nav_items:
+#             st.markdown(f"[{item}](#{item.lower().replace(' ', '-')})")
 
 def display_career_snapshot():
     st.subheader('Career Snapshot')
