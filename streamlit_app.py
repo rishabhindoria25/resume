@@ -104,83 +104,93 @@ def display_summary():
 
 def display_projects():
     st.subheader('Projects')
-    with st.expander("View Projects"):
-        # Project 1 - Imbalanced Meteorological Data Analysis for Rainfall Prediction
+
+    # Project 1 - Imbalanced Meteorological Data Analysis for Rainfall Prediction
+    with st.expander("Imbalanced Meteorological Data Analysis for Rainfall Prediction - December 2023"):
         st.markdown("""
-        ### [Imbalanced Meteorological Data Analysis for Rainfall Prediction](https://github.com/rishabhindoria25/Imbalanced_Meteorological_Data_Analysis) - December 2023
         - Enhanced prediction accuracy in an imbalanced dataset using SMOTE, class weight adjustments, and optimizer tuning.
         - Developed and trained ConvLSTM Model for Rainfall Forecasting, achieving 77% Class-1 Accuracy.
+        [Project Link](https://github.com/rishabhindoria25/Imbalanced_Meteorological_Data_Analysis)
         """)
 
-        # Project 2 - Biomedical Text Tagging Using BioBert
+    # Project 2 - Biomedical Text Tagging Using BioBert
+    with st.expander("Biomedical Text Tagging Using BioBert - December 2023"):
         st.markdown("""
-        ### [Biomedical Text Tagging Using BioBert](https://github.com/rishabhindoria25/Biomedical_Text_Tagging) - December 2023
         - Automated the use case of NER by tagging genes and proteins in biomedical text data using transformer-based BioBert model.
+        [Project Link](https://github.com/rishabhindoria25/Biomedical_Text_Tagging)
         """)
 
-        # Project 3 - Image Segmentation with Contextual Captioning
+    # Project 3 - Image Segmentation with Contextual Captioning
+    with st.expander("Image Segmentation with Contextual Captioning - October 2023"):
         st.markdown("""
-        ### [Image Segmentation with Contextual Captioning](https://github.com/rishabhindoria25/Image_Segmentation) - October 2023
         - Implemented CNN with PyTorch and OpenCV for efficient image segmentation with F1-Score of 0.92.
         - Developed RNN in TensorFlow and NLTK for generating context-aware captions from segmented data with 70 Perplexity score.
+        [Project Link](https://github.com/rishabhindoria25/Image_Segmentation)
         """)
 
-        # Project 4 - Enhanced Audio Journaling with LLM
+    # Project 4 - Enhanced Audio Journaling with LLM
+    with st.expander("Enhanced Audio Journaling with LLM - August 2023"):
         st.markdown("""
-        ### [Enhanced Audio Journaling with LLM](https://github.com/rishabhindoria25/Enhanced_Audio_Journaling) - August 2023
         - Implemented containerized audio processing algorithms, focusing on emotion detection for accurate sentiment analysis.
         - Leveraged Snowflake for efficient and scalable data storage.
         - Utilized GPT-3.5 prompt engineering for generating personalized feedback.
+        [Project Link](https://github.com/rishabhindoria25/Enhanced_Audio_Journaling)
         """)
 
-        # Project 5 - Finance Search Optimization
+    # Project 5 - Finance Search Optimization
+    with st.expander("Finance Search Optimization - May 2023"):
         st.markdown("""
-        ### [Finance Search Optimization](https://github.com/rishabhindoria25/Finance_Search_Optimization) - May 2023
         - Engineered a Q&A and text summarization platform, ingesting financial transcripts from Kafka pub-sub.
         - Used Langchain traditional filters, RAG, and Pinecone for vector similarity.
         - Dockerized Airflow data pipelines and Spark processing strategies.
+        [Project Link](https://github.com/rishabhindoria25/Finance_Search_Optimization)
         """)
 
-        # Project 6 - Sentiment Analysis: Deciphering Restaurant Reviews
+    # Project 6 - Sentiment Analysis: Deciphering Restaurant Reviews
+    with st.expander("Sentiment Analysis: Deciphering Restaurant Reviews - April 2023"):
         st.markdown("""
-        ### [Sentiment Analysis: Deciphering Restaurant Reviews](https://github.com/rishabhindoria25/Sentiment_Analysis_Restaurant_Reviews) - April 2023
         - Developed a dataset of restaurant reviews through prompt engineering using OpenAI's Davinci model.
         - Applied text preprocessing techniques followed by TF-IDF Vectorization and Naive Bayes algorithm for sentiment analysis.
+        [Project Link](https://github.com/rishabhindoria25/Sentiment_Analysis_Restaurant_Reviews)
         """)
 
-        # Project 7 - Glycoprotein Sequence Prediction
+    # Project 7 - Glycoprotein Sequence Prediction
+    with st.expander("Glycoprotein Sequence Prediction - March 2023"):
         st.markdown("""
-        ### [Glycoprotein Sequence Prediction](https://github.com/rishabhindoria25/Glycoprotein_Sequence_Prediction) - March 2023
         - Designed and implemented a system for predicting Glycoprotein sequences by combining PSI-BLAST search with a GAT model.
+        [Project Link](https://github.com/rishabhindoria25/Glycoprotein_Sequence_Prediction)
         """)
 
-        # Project 8 - H&M Product Recommendation System
+    # Project 8 - H&M Product Recommendation System
+    with st.expander("H&M Product Recommendation System - November 2023"):
         st.markdown("""
-        ### [H&M Product Recommendation System](https://github.com/rishabhindoria25/HM_Product_Recommendation_System) - November 2023
         - Conducted customer segmentation analysis using clustering techniques on customer embeddings.
-        - Built product recommendations using item-item embeddings with sentence transformer & TF-IDF vectorization.
+        - Built product recommendations using item-item embeddings with sentence transformer & TF-ID -IDF vectorization.
         - Improved recommendation results by incorporating pre-trained Glove embeddings and clustering pipelines.
+        [Project Link](https://github.com/rishabhindoria25/HM_Product_Recommendation_System)
         """)
-
-        # Project 9 - AndroXmeda
+    # Project 9 - AndroXmeda
+    with st.expander("AndroXmeda - January 2023 to April 2023"):
         st.markdown("""
-        ### [AndroXmeda](https://github.com/AndroXmeda) - January 2023 to April 2023
         - Modeled a REST API with NodeJS, Express, Postgres, Bcrypt, and Sequelize ORM for a full-stack ReactJS application.
         - Deployed the REST API on AWS CloudFormation using S3, RDS, and EC2.
         - Set up CI/CD pipelines with custom GitHub Actions for API delivery and AWS SES notifications.
+        [Project Link](https://github.com/AndroXmeda)
         """)
 
-        # Project 10 - Economics of Happiness
+    # Project 10 - Economics of Happiness
+    with st.expander("Economics of Happiness - November 2022"):
         st.markdown("""
-        ### [Economics of Happiness](https://github.com/rishabhindoria25/Economics_of_Happiness) - November 2022
         - Utilized logistic regression and decision trees for exploratory analysis of the relationship between economic indicators and happiness.
+        [Project Link](https://github.com/rishabhindoria25/Economics_of_Happiness)
         """)
 
-        # Project 11 - QueryVision
+    # Project 11 - QueryVision
+    with st.expander("QueryVision, under Dr. Ajitha Shenoy - January 2017 to June 2017"):
         st.markdown("""
-        ### [QueryVision](https://github.com/rishabhindoria25/QueryVision), under Dr. Ajitha Shenoy - January 2017 to June 2017
         - Developed a Python script for image similarity search using a pre-trained VGG16 model, achieving 95% top-10 matching accuracy.
         - Implemented feature extraction and cosine similarity calculation for a dataset of 10,000 images.
+        [Project Link](https://github.com/rishabhindoria25/QueryVision)
         """)
 
 
