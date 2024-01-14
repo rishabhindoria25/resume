@@ -32,45 +32,6 @@ def display_header():
         mime="application/pdf",
     )
 
-def create_navbar():
-    NAVBAR_HTML = """
-    <style>
-    #navBar {
-        background-color: #007bff; /* Blue background */
-        color: white; /* White text */
-        padding: 10px 20px; /* Some padding */
-        position: fixed; /* Fixed position */
-        top: 0; /* Stick it to the top */
-        width: 100%; /* Full width */
-        z-index: 999; /* Make sure it's on top */
-    }
-
-    #navBar a {
-        color: white; /* Links should be white too */
-        padding: 10px 20px; /* Padding for links */
-        text-decoration: none; /* No underline */
-        margin: 0 10px; /* Space out the links */
-    }
-
-    #navBar a:hover {
-        background-color: #0056b3; /* Darker blue on hover */
-    }
-
-    .content {
-        margin-top: 60px; /* Add top margin to content to avoid hiding behind the navbar */
-    }
-    </style>
-
-    <div id="navBar">
-        <a href="#summary">Summary</a>
-        <a href="#career-snapshot">Career Snapshot</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#work-experience">Work Experience</a>
-        <a href="#projects">Projects</a>
-    </div>
-    """
-    st.markdown(NAVBAR_HTML, unsafe_allow_html=True)
 
 def display_social_media_links():
     cols = st.columns(len(SOCIAL_MEDIA) + 1)
@@ -247,7 +208,7 @@ st.set_page_config(
 
 
 if __name__ == "__main__":
-    create_navbar()
+    # create_navbar()
     display_header()
     display_social_media_links()
     st.markdown("---")
