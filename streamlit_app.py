@@ -64,17 +64,17 @@ def display_education():
 def display_skills():
     st.subheader('Skills')
     skills_categories = {
-        "Programming and Development": "Python, Java, SQL, Spark, Kafka, Linux, Numpy, Pandas, MATLAB",
-        "Machine Learning": "Scikit-Learn, Multivariate Statistics, Supervised/Unsupervised Learning, Bayesian Models",
-        "Deep Learning and AI": "TensorFlow, Keras, PyTorch, NLP, CNN, GPT-3",
-        "Web Development": "Flask, Streamlit, FastAPI, Node.js, React.js, Nginx, Gunicorn",
-        "Cloud and Data Technologies": "AWS, GCP, Azure, Snowflake, Hadoop, Databricks",
-        "Data Visualization and Analysis": "PowerBI, Tableau, ChartJS, Grafana Labs, MS Excel"
+        "Programming and Development": ["Python", "Java", "SQL", "Spark", "Kafka", "Linux", "Numpy", "Pandas", "MATLAB"],
+        "Machine Learning": ["Scikit-Learn", "Multivariate Statistics", "Supervised/Unsupervised Learning", "Bayesian Models"],
+        "Deep Learning and AI": ["TensorFlow", "Keras", "PyTorch", "NLP", "CNN", "GPT-3"],
+        "Web Development": ["Flask", "Streamlit", "FastAPI", "Node.js", "React.js", "Nginx", "Gunicorn"],
+        "Cloud and Data Technologies": ["AWS", "GCP", "Azure", "Snowflake", "Hadoop", "Databricks"],
+        "Data Visualization and Analysis": ["PowerBI", "Tableau", "ChartJS", "Grafana Labs", "MS Excel"]
     }
     with st.expander("View Skills"):
         for category, skills in skills_categories.items():
             with st.expander(category):
-                st.markdown(skills)
+                st.markdown(", ".join(skills))
 
 def display_work_experience():
     st.subheader('Work Experience')
