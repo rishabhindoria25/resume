@@ -55,6 +55,24 @@ def display_education():
     ### Bachelors of Technology (Information Technology), Manipal Institute of Technology, Manipal, India (2013-2017)
     """)
 
+# def display_skills():
+#     st.subheader('Skills')
+#     skills_categories = {
+#         "Programming and Development": ["Python", "Java", "SQL", "Spark", "Kafka", "Linux", "Numpy", "Pandas", "MATLAB"],
+#         "Machine Learning": ["Scikit-Learn", "Multivariate Statistics", "Supervised/Unsupervised Learning", "Bayesian Models"],
+#         "Deep Learning and AI": ["TensorFlow", "Keras", "PyTorch", "NLP", "CNN", "GPT-3"],
+#         "Web Development": ["Flask", "Streamlit", "FastAPI", "Node.js", "React.js", "Nginx", "Gunicorn"],
+#         "Cloud and Data Technologies": ["AWS", "GCP", "Azure", "Snowflake", "Hadoop", "Databricks"],
+#         "Data Visualization and Analysis": ["PowerBI", "Tableau", "ChartJS", "Grafana Labs", "MS Excel"]
+#     }
+    
+#     # Transforming the dictionary into a DataFrame
+#     data = [{"Category": category, "Skills": ", ".join(skills)} for category, skills in skills_categories.items()]
+#     df = pd.DataFrame(data)
+
+#     # Displaying the DataFrame as a table
+#     st.table(df)
+
 def display_skills():
     st.subheader('Skills')
     skills_categories = {
@@ -70,8 +88,9 @@ def display_skills():
     data = [{"Category": category, "Skills": ", ".join(skills)} for category, skills in skills_categories.items()]
     df = pd.DataFrame(data)
 
-    # Displaying the DataFrame as a table
-    st.table(df)
+    # Displaying the DataFrame as a table without index and header
+    html = df.to_html(index=False, header=False)
+    st.write(html, unsafe_allow_html=True)
 
 def display_work_experience():
     st.subheader('Work Experience')
