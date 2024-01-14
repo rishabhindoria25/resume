@@ -33,35 +33,44 @@ def display_header():
     )
 
 def create_navbar():
-    # HTML for the navbar
-    navbar_html = """
+    NAVBAR_HTML = """
     <style>
-    #navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #4CAF50;
-        color: red;
-        text-align: center;
-        z-index: 999;
+    #navBar {
+        background-color: #007bff; /* Blue background */
+        color: white; /* White text */
+        padding: 10px 20px; /* Some padding */
+        position: fixed; /* Fixed position */
+        top: 0; /* Stick it to the top */
+        width: 100%; /* Full width */
+        z-index: 999; /* Make sure it's on top */
     }
-    #navbar a {
-        padding: 14px 20px;
-        text-decoration: none;
-        color: blue;
+
+    #navBar a {
+        color: white; /* Links should be white too */
+        padding: 10px 20px; /* Padding for links */
+        text-decoration: none; /* No underline */
+        margin: 0 10px; /* Space out the links */
+    }
+
+    #navBar a:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    .content {
+        margin-top: 60px; /* Add top margin to content to avoid hiding behind the navbar */
     }
     </style>
-    <div id="navbar">
-        <a href="#home">Home</a>
+
+    <div id="navBar">
+        <a href="#summary">Summary</a>
         <a href="#career-snapshot">Career Snapshot</a>
-        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a href="#work-experience">Work Experience</a>
         <a href="#projects">Projects</a>
     </div>
     """
-    st.markdown(navbar_html, unsafe_allow_html=True)
+    st.markdown(NAVBAR_HTML, unsafe_allow_html=True)
 
 def display_social_media_links():
     cols = st.columns(len(SOCIAL_MEDIA) + 1)
@@ -236,17 +245,27 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+
 if __name__ == "__main__":
     create_navbar()
+    st.markdown("<div class='content'>", unsafe_allow_html=True)
     display_header()
     display_social_media_links()
     st.markdown("---")
+    st.markdown("<h2 id='summary'>Summary</h2>", unsafe_allow_html=True)
     display_summary()
+    st.markdown("<h2 id='career-snapshot'>Career Snapshot</h2>", unsafe_allow_html=True)
     display_career_snapshot()
+    st.markdown("<h2 id='skills'>Skills</h2>", unsafe_allow_html=True)
     display_skills()
+    st.markdown("<h2 id='education'>Education</h2>", unsafe_allow_html=True)
     display_education()
+    st.markdown("<h2 id='work-experience'>Work Experience</h2>", unsafe_allow_html=True)
     display_work_experience()
+    st.markdown("<h2 id='projects'>Projects</h2>", unsafe_allow_html=True)
     display_projects()
+    st.markdown("</div>", unsafe_allow_html=True)  # Close the content div
+
 
     # Footer
     st.markdown("---")
