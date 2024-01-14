@@ -77,7 +77,10 @@ def display_work_experience():
     st.subheader('Work Experience')
 
     # Experience 1 - Lead Data Scientist at Urja.io
-    with st.expander("URJA.IO | Lead Data Scientist (February 2021 - August 2022)"):
+    with st.expander("URJA.IO"):
+        st.markdown("""
+        Lead Data Scientist (February 2021 - August 2022)
+        """)
         st.markdown("""
         - Spearheaded development team in creating an end-to-end analytical dashboard tool, resulting in a 25% increase in user retention.
         - Reduced costs by 23% with a 94% accurate machinery-failure prediction system using Facebook Prophet for forecasting.
@@ -85,7 +88,10 @@ def display_work_experience():
         """)
 
     # Experience 2 - Data Scientist at Societe Generale Global Solution Centre
-    with st.expander("SOCIETE GENERALE GLOBAL SOLUTION CENTRE | Data Scientist (July 2017 - March 2020)"):
+    with st.expander("SOCIETE GENERALE GLOBAL SOLUTION CENTRE"):
+        st.markdown("""
+        Data Scientist (July 2017 - March 2020)
+        """)
         st.markdown("""
         - Enhanced deployment speed by 30% with Infrastructure as Code (IaC) through Terraform and GitHub CI/CD optimizations.
         - Increased fraud detection in investment banking by 17% using XGBoost models for identifying irregular transaction volumes.
