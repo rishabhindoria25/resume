@@ -46,14 +46,48 @@ def display_career_snapshot():
     with open('timeline.json', "r") as f:
         data = f.read()
         timeline(data, height=400)
-
 def display_education():
     st.subheader('Education')
+
     st.markdown("""
-    ### Masters of Science (Information Systems), Northeastern University, Boston, Massachusetts (2022-2024)
-    - GPA: 3.75
-    ### Bachelors of Technology (Information Technology), Manipal Institute of Technology, Manipal, India (2013-2017)
-    """)
+    <style>
+    .education-info {
+        font-size: 16px;
+    }
+    .institution {
+        font-weight: bold;
+    }
+    .degree {
+        font-style: italic;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div class="education-info">
+        <ul>
+            <li>
+                <span class="institution">Northeastern University, Boston, Massachusetts</span><br>
+                <span class="degree">Masters of Science (Information Systems)</span><br>
+                2022 - 2024<br>
+                GPA: 3.75
+            </li>
+            <li>
+                <span class="institution">Manipal Institute of Technology, Manipal, India</span><br>
+                <span class="degree">Bachelors of Technology (Information Technology)</span><br>
+                2013 - 2017
+            </li>
+        </ul>
+    </div>
+    """, unsafe_allow_html=True)
+
+# def display_education():
+#     st.subheader('Education')
+#     st.markdown("""
+#     ### Masters of Science (Information Systems), Northeastern University, Boston, Massachusetts (2022-2024)
+#     - GPA: 3.75
+#     ### Bachelors of Technology (Information Technology), Manipal Institute of Technology, Manipal, India (2013-2017)
+#     """)
 
 # def display_skills():
 #     st.subheader('Skills')
