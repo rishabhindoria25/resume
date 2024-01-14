@@ -281,47 +281,49 @@ def display_work_experience():
         """)
 
 
-# def display_summary():
-#     st.subheader('Summary')
-#     st.markdown("""
-#         **HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
-#         """)
-#     st.info('''
-#     I am a highly accomplished data scientist with a strong focus on achieving measurable results. 
-#     I possess extensive experience working within cross-functional teams to achieve organizational objectives. 
-#     Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and 
-#     cost-effective manner utilizing my in-depth domain expertise. I have consistently demonstrated exceptional 
-#     diligence and commitment to excellence in both my coursework and professional work. I am eager to continue 
-#     this level of performance in future projects, utilizing diverse models, frameworks, and data.
-#     ''')
-
 def display_summary():
-    # Custom CSS for centering
+    st.subheader('Summary')
+    st.markdown('<div class="centered">', unsafe_allow_html=True)
     st.markdown("""
-    <style>
-    .centered {
-        text-align: center;
-    }
-    </style>
-    """, unsafe_allow_html=True)
+        **HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
+        """)
+    st.markdown('</div>', unsafe_allow_html=True)
+    st.info('''
+    I am a highly accomplished data scientist with a strong focus on achieving measurable results. 
+    I possess extensive experience working within cross-functional teams to achieve organizational objectives. 
+    Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and 
+    cost-effective manner utilizing my in-depth domain expertise. I have consistently demonstrated exceptional 
+    diligence and commitment to excellence in both my coursework and professional work. I am eager to continue 
+    this level of performance in future projects, utilizing diverse models, frameworks, and data.
+    ''')
 
-    # Center the summary
-    col1, col2, col3 = st.columns([1,2,1])
-    with col2:
-        st.markdown('<div class="centered">', unsafe_allow_html=True)
-        st.subheader('Summary')
-        st.markdown("""
-            **HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
-            """)
-        st.info('''
-        I am a highly accomplished data scientist with a strong focus on achieving measurable results. 
-        I possess extensive experience working within cross-functional teams to achieve organizational objectives. 
-        Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and 
-        cost-effective manner utilizing my in-depth domain expertise. I have consistently demonstrated exceptional 
-        diligence and commitment to excellence in both my coursework and professional work. I am eager to continue 
-        this level of performance in future projects, utilizing diverse models, frameworks, and data.
-        ''')
-        st.markdown('</div>', unsafe_allow_html=True)
+# def display_summary():
+#     # Custom CSS for centering
+#     st.markdown("""
+#     <style>
+#     .centered {
+#         text-align: center;
+#     }
+#     </style>
+#     """, unsafe_allow_html=True)
+
+#     # Center the summary
+#     col1, col2, col3 = st.columns([1,2,1])
+#     with col2:
+#         st.markdown('<div class="centered">', unsafe_allow_html=True)
+#         st.subheader('Summary')
+#         st.markdown("""
+#             **HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
+#             """)
+#         st.info('''
+#         I am a highly accomplished data scientist with a strong focus on achieving measurable results. 
+#         I possess extensive experience working within cross-functional teams to achieve organizational objectives. 
+#         Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and 
+#         cost-effective manner utilizing my in-depth domain expertise. I have consistently demonstrated exceptional 
+#         diligence and commitment to excellence in both my coursework and professional work. I am eager to continue 
+#         this level of performance in future projects, utilizing diverse models, frameworks, and data.
+#         ''')
+#         st.markdown('</div>', unsafe_allow_html=True)
 
 
 def display_projects():
