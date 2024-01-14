@@ -21,16 +21,29 @@ def read_file(file_path):
     with open(file_path, "rb") as file:
         return file.read()
 
+# def display_header():
+#     profile_pic = PROFILE_PIC_PATH
+#     st.image(profile_pic, width=150)
+#     st.title("Rishabh Indoria")
+#     st.download_button(
+#         label="Download Resume",
+#         data=read_file(RESUME_FILE),
+#         file_name=RESUME_FILE,
+#         mime="application/pdf",
+#     )
 def display_header():
-    profile_pic = PROFILE_PIC_PATH
-    st.image(profile_pic, width=150)
-    st.title("Rishabh Indoria")
-    st.download_button(
-        label="Download Resume",
-        data=read_file(RESUME_FILE),
-        file_name=RESUME_FILE,
-        mime="application/pdf",
-    )
+    col1, col2, col3 = st.columns([1,2,1])
+
+    with col2:
+        profile_pic = PROFILE_PIC_PATH
+        st.image(profile_pic, width=150)
+        st.title("Rishabh Indoria")
+        st.download_button(
+            label="Download Resume",
+            data=read_file(RESUME_FILE),
+            file_name=RESUME_FILE,
+            mime="application/pdf",
+        )
 
 
 def display_social_media_links():
