@@ -248,24 +248,21 @@ st.set_page_config(
 
 if __name__ == "__main__":
     create_navbar()
-    st.markdown("<div class='content'>", unsafe_allow_html=True)
     display_header()
     display_social_media_links()
     st.markdown("---")
-    st.markdown("<h2 id='summary'>Summary</h2>", unsafe_allow_html=True)
     display_summary()
-    st.markdown("<h2 id='career-snapshot'>Career Snapshot</h2>", unsafe_allow_html=True)
+    st.markdown("---")
     display_career_snapshot()
-    st.markdown("<h2 id='skills'>Skills</h2>", unsafe_allow_html=True)
+    st.markdown("---")
     display_skills()
-    st.markdown("<h2 id='education'>Education</h2>", unsafe_allow_html=True)
+    st.markdown("---")
     display_education()
-    st.markdown("<h2 id='work-experience'>Work Experience</h2>", unsafe_allow_html=True)
+    st.markdown("---")
     display_work_experience()
-    st.markdown("<h2 id='projects'>Projects</h2>", unsafe_allow_html=True)
+    st.markdown("---")
     display_projects()
-    st.markdown("</div>", unsafe_allow_html=True)  # Close the content div
-
+    
 
     # Footer
     st.markdown("---")
