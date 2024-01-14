@@ -202,7 +202,7 @@ def display_projects():
 st.set_page_config(
     page_title="Rishabh Indoria",
     page_icon=PROFILE_PIC_PATH,
-    layout="wide",
+    layout="centered",
     initial_sidebar_state="expanded"
 )
 
