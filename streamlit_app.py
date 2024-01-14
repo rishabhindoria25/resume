@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+from streamlit_timeline import timeline
 
 # Constants
 PROFILE_PIC_PATH = 'dp.png'
