@@ -6,10 +6,10 @@ import pandas as pd
 PROFILE_PIC_PATH = Image.open('dp.png')
 RESUME_FILE = "RishabhIndoria_Resume.pdf"
 EMAIL = "indoria.r@northeastern.edu"
-SOCIAL_MEDIA = {
-    "LinkedIn": "https://linkedin.com/in/rishabhindoria/",
-    "GitHub": "https://github.com/rishabhindoria25"
-}
+# SOCIAL_MEDIA = {
+#     "LinkedIn": "https://linkedin.com/in/rishabhindoria/",
+#     "GitHub": "https://github.com/rishabhindoria25"
+# }
 
 # Functions
 @st.cache(allow_output_mutation=True)
@@ -460,6 +460,44 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Define social media links and styling
+SOCIAL_MEDIA_FOOTER = {
+    "LinkedIn": "https://linkedin.com/in/rishabhindoria/",
+    "GitHub": "https://github.com/rishabhindoria25",
+    "Email": "mailto:indoria.r@northeastern.edu"
+}
+
+FOOTER_STYLE = """
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;  # You can change the background color
+    color: black;  # Text color
+    text-align: center;
+    padding: 10px;
+}
+.footer a {
+    color: inherit;
+    padding: 0 10px;
+    text-decoration: none;
+}
+</style>
+"""
+
+# Function to display footer with social media links
+def display_footer():
+    st.markdown(FOOTER_STYLE, unsafe_allow_html=True)
+    footer_html = "<div class='footer'>"
+    for platform, link in SOCIAL_MEDIA_FOOTER.items():
+        footer_html += f"<a href='{link}'>{platform}</a>"
+    footer_html += "</div>"
+    st.markdown(footer_html, unsafe_allow_html=True)
+    st.markdown("© 2024 Rishabh Indoria")
+
+
 
 if __name__ == "__main__":
     # create_navbar()
@@ -478,8 +516,10 @@ if __name__ == "__main__":
     display_work_experience()
     st.markdown("---")
     display_projects()
+    st.markdown("---")
+    display_footer()
     
 
-    # Footer
-    st.markdown("---")
-    st.markdown("© 2024 Rishabh Indoria")
+    # # Footer
+    # st.markdown("---")
+    
