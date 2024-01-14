@@ -36,7 +36,7 @@ def display_header_and_education():
         )
 
     with col4:
-        st.subheader('Education')
+        # st.subheader('Education')
         st.markdown("""
         <style>
         .education-info {
