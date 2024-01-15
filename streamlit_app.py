@@ -4,7 +4,6 @@ from streamlit_timeline import timeline
 import pandas as pd
 # Constants
 PROFILE_PIC_PATH = Image.open('dp.png')
-ICON_PIC_PATH = 'dp.png'
 RESUME_FILE = "RishabhIndoria_Resume.pdf"
 EMAIL = "indoria.r@northeastern.edu"
 
@@ -310,7 +309,7 @@ def display_projects():
 # Page Configuration
 st.set_page_config(
     page_title="Rishabh Indoria",
-    page_icon=ICON_PIC_PATH,
+    page_icon=PROFILE_PIC_PATH,
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -345,12 +344,22 @@ FOOTER_STYLE = """
 """
 
 # Function to display footer with social media links and copyright text
+# def display_footer():
+#     st.markdown(FOOTER_STYLE, unsafe_allow_html=True)
+#     footer_html = "<div class='footer'><div>"
+#     for platform, link in SOCIAL_MEDIA_FOOTER.items():
+#         footer_html += f"<a href='{link}'>{platform}</a>"
+#     footer_html += "</div><div>© 2024 Rishabh Indoria</div></div>"
+#     st.markdown(footer_html, unsafe_allow_html=True)
 def display_footer():
     st.markdown(FOOTER_STYLE, unsafe_allow_html=True)
-    footer_html = "<div class='footer'><div>"
+    footer_html = "<div class='footer' style='display: flex; justify-content: space-between; align-items: center;'>"
+    footer_html += "<div>"
     for platform, link in SOCIAL_MEDIA_FOOTER.items():
-        footer_html += f"<a href='{link}'>{platform}</a>"
-    footer_html += "</div><div>© 2024 Rishabh Indoria</div></div>"
+        footer_html += f"<a href='{link}'>{platform}</a> "
+    footer_html += "</div>"
+    footer_html += "<div>© 2024 Rishabh Indoria</div>"
+    footer_html += "</div>"
     st.markdown(footer_html, unsafe_allow_html=True)
 
 
