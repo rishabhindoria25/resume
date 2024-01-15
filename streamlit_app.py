@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 from streamlit_timeline import timeline
 import pandas as pd
+import time
 # Constants
 PROFILE_PIC_PATH = Image.open('dp.png')
 RESUME_FILE = "RishabhIndoria_Resume.pdf"
