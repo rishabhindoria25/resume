@@ -24,7 +24,7 @@ def display_header_and_education():
     with col2:
         profile_pic = PROFILE_PIC_PATH
         st.image(profile_pic, width=150)
-        st.title("Rishabh Indoria")
+        st.title("Rishabh Indoria ~~THE IT CROWD~~")
         st.download_button(
             label="Download Resume",
             data=read_file(RESUME_FILE),
