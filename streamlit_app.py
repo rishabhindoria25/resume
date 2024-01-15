@@ -4,6 +4,7 @@ from streamlit_timeline import timeline
 import pandas as pd
 # Constants
 PROFILE_PIC_PATH = Image.open('dp.png')
+ICON_PIC_PATH = 'dp.png'
 RESUME_FILE = "RishabhIndoria_Resume.pdf"
 EMAIL = "indoria.r@northeastern.edu"
 
@@ -309,7 +310,7 @@ def display_projects():
 # Page Configuration
 st.set_page_config(
     page_title="Rishabh Indoria",
-    page_icon=PROFILE_PIC_PATH,
+    page_icon=ICON_PIC_PATH,
     layout="wide",
     initial_sidebar_state="expanded"
 )
