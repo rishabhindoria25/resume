@@ -26,7 +26,7 @@ def display_header_and_education():
 
     with col2:
         profile_pic = PROFILE_PIC_PATH
-        st.image(profile_pic, width=150)
+        st.image(profile_pic, width=150, use_column_width='always')
         st.title("Rishabh Indoria ~~THE IT CROWD~~")
         
     with col4:
