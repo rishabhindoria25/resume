@@ -460,7 +460,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Define social media links and styling
 SOCIAL_MEDIA_FOOTER = {
     "LinkedIn": "https://linkedin.com/in/rishabhindoria/",
     "GitHub": "https://github.com/rishabhindoria25",
@@ -474,9 +473,11 @@ FOOTER_STYLE = """
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #f1f1f1;  # You can change the background color
-    color: black;  # Text color
-    text-align: center;
+    background-color: #007bff;  # Blue hue background color
+    color: white;  # Adjust text color for better visibility
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
 }
 .footer a {
@@ -487,15 +488,14 @@ FOOTER_STYLE = """
 </style>
 """
 
-# Function to display footer with social media links
+# Function to display footer with social media links and copyright text
 def display_footer():
     st.markdown(FOOTER_STYLE, unsafe_allow_html=True)
-    footer_html = "<div class='footer'>"
+    footer_html = "<div class='footer'><div>"
     for platform, link in SOCIAL_MEDIA_FOOTER.items():
         footer_html += f"<a href='{link}'>{platform}</a>"
-    footer_html += "</div>"
+    footer_html += "</div><div>© 2024 Rishabh Indoria</div></div>"
     st.markdown(footer_html, unsafe_allow_html=True)
-    st.markdown("© 2024 Rishabh Indoria")
 
 
 
