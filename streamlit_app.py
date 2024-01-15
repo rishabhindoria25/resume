@@ -475,7 +475,7 @@ FOOTER_STYLE = """
     bottom: 0;
     width: 100%;
     background-color: #1f77b4;  # Streamlit's info blue color
-    color: white;  # White text color for better visibility
+    color: #ffffff;  # White text color for better visibility
     display: flex;
     justify-content: space-between;
     align-items: center;
