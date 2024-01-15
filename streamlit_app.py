@@ -330,7 +330,7 @@ FOOTER_STYLE = """
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #ADD8E6;  # Streamlit's info blue color
+    background-color: #E8F4FF;  # Streamlit's info blue color
     color: #ffffff;  # White text color for better visibility
     display: flex;
     justify-content: space-between;
