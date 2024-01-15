@@ -50,7 +50,7 @@ def display_header_and_education():
                 <li>
                     <span class="institution">Northeastern University, Boston, Massachusetts</span><br>
                     <span class="degree">Masters of Science (Information Systems)</span><br>
-                    Graduate Teaching Assistant - INFO 7390 Advances in Data Sciences and Architecture<br>
+                    TA - INFO 7390 Advances in Data Sciences and Architecture<br>
                     <a href="https://www.youtube.com/watch?v=Cf98HE5PRPk">I did a cool presentation at AI Skunkworks!</a>
                 </li>
                 <li>
