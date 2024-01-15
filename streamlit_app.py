@@ -29,7 +29,7 @@ def display_header_and_education():
         st.image(profile_pic, width=150, use_column_width='always')
         
     with col4:
-        st.title("Rishabh Indoria ~~THE IT CROWD~~")
+        st.title("Rishabh Indoria")
         st.markdown("""
         <style>
         .education-info {
