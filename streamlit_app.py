@@ -19,6 +19,7 @@ def read_file(file_path):
         return file.read()
 
 def display_header_and_education():
+    st.markdown('<div id="header-and-education"></div>', unsafe_allow_html=True)
     col1, col2, col3, col4, col5 = st.columns([1, 2, 1, 2, 1])
 
     with col2:
