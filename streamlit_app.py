@@ -13,7 +13,7 @@ EMAIL = "indoria.r@northeastern.edu"
 def load_image(image_path):
     return Image.open(image_path)
 
-# @st.cache(allow_output_mutation=True)
+@st.cache(allow_output_mutation=True)
 def read_file(file_path):
     with open(file_path, "rb") as file:
         return file.read()
