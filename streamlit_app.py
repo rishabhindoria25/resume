@@ -50,12 +50,13 @@ def display_header_and_education():
                 <li>
                     <span class="institution">Northeastern University, Boston, Massachusetts</span><br>
                     <span class="degree">Masters of Science (Information Systems)</span><br>
+                    Graduate Teaching Assistant - INFO 7390 Advances in Data Sciences and Architecture<br>
                     <a href="https://www.youtube.com/watch?v=Cf98HE5PRPk">I did a cool presentation at AI Skunkworks!</a>
                 </li>
                 <li>
                     <span class="institution">Manipal Institute of Technology, Manipal, India</span><br>
                     <span class="degree">Bachelors of Technology (Information Technology)</span><br>
-                    <a href="#ResearchProject">Research Project under Dr. Ajitha Shenoy</a>
+                    <a href="https://github.com/rishabhindoria25/QueryVision">Research Project under Dr. Ajitha Shenoy</a>
                 </li>
             </ul>
         </div>
