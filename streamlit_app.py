@@ -6,10 +6,7 @@ import pandas as pd
 PROFILE_PIC_PATH = Image.open('dp.png')
 RESUME_FILE = "RishabhIndoria_Resume.pdf"
 EMAIL = "indoria.r@northeastern.edu"
-# SOCIAL_MEDIA = {
-#     "LinkedIn": "https://linkedin.com/in/rishabhindoria/",
-#     "GitHub": "https://github.com/rishabhindoria25"
-# }
+
 
 # Functions
 @st.cache(allow_output_mutation=True)
@@ -68,94 +65,6 @@ def display_header_and_education():
             </ul>
         </div>
         """, unsafe_allow_html=True)
-# def display_header_and_education():
-#     col1, col2 = st.columns([1, 2])
-
-#     with col1:
-#         profile_pic = PROFILE_PIC_PATH
-#         st.image(profile_pic, width=150)
-#         st.title("Rishabh Indoria")
-#         st.download_button(
-#             label="Download Resume",
-#             data=read_file(RESUME_FILE),
-#             file_name=RESUME_FILE,
-#             mime="application/pdf",
-#         )
-
-#     with col2:
-#         st.subheader('Education')
-#         st.markdown("""
-#         <style>
-#         .education-info {
-#             font-size: 16px;
-#         }
-#         .institution {
-#             font-weight: bold;
-#         }
-#         .degree {
-#             font-style: italic;
-#         }
-#         </style>
-#         """, unsafe_allow_html=True)
-
-#         st.markdown("""
-#         <div class="education-info">
-#             <ul>
-#                 <li>
-#                     <span class="institution">Northeastern University, Boston, Massachusetts</span><br>
-#                     <span class="degree">Masters of Science (Information Systems)</span><br>
-#                     2022 - 2024<br>
-#                     GPA: 3.75
-#                 </li>
-#                 <li>
-#                     <span class="institution">Manipal Institute of Technology, Manipal, India</span><br>
-#                     <span class="degree">Bachelors of Technology (Information Technology)</span><br>
-#                     2013 - 2017
-#                 </li>
-#             </ul>
-#         </div>
-#         """, unsafe_allow_html=True)
-
-# def display_header():
-#     profile_pic = PROFILE_PIC_PATH
-#     st.image(profile_pic, width=150)
-#     st.title("Rishabh Indoria")
-#     st.download_button(
-#         label="Download Resume",
-#         data=read_file(RESUME_FILE),
-#         file_name=RESUME_FILE,
-#         mime="application/pdf",
-#     )
-
-# def display_header():
-#     col1, col2 = st.columns([3, 2])
-
-#     with col1:
-#         profile_pic = PROFILE_PIC_PATH
-#         st.image(profile_pic, width=150)
-#         st.title("Rishabh Indoria")
-#         st.download_button(
-#             label="Download Resume",
-#             data=read_file(RESUME_FILE),
-#             file_name=RESUME_FILE,
-#             mime="application/pdf",
-#         )
-
-#     with col2:
-#         st.markdown("## Social Media")
-#         for platform, link in SOCIAL_MEDIA.items():
-#             st.markdown(f"- [{platform}]({link})")
-#         st.markdown(f"- [Email](mailto:{EMAIL})")
-
-
-# def display_social_media_links():
-#     st.subheader('Social Media')
-#     cols = st.columns(len(SOCIAL_MEDIA) + 1)
-#     for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-#         with cols[index]:
-#             st.markdown(f"[{platform}]({link})")
-#     with cols[-1]:
-#         st.markdown(f"[Email](mailto:{EMAIL})")
 
 def display_social_media_links():
     st.subheader('Social Media')
@@ -209,31 +118,6 @@ def display_education():
     </div>
     """, unsafe_allow_html=True)
 
-# def display_education():
-#     st.subheader('Education')
-#     st.markdown("""
-#     ### Masters of Science (Information Systems), Northeastern University, Boston, Massachusetts (2022-2024)
-#     - GPA: 3.75
-#     ### Bachelors of Technology (Information Technology), Manipal Institute of Technology, Manipal, India (2013-2017)
-#     """)
-
-# def display_skills():
-#     st.subheader('Skills')
-#     skills_categories = {
-#         "Programming and Development": ["Python", "Java", "SQL", "Spark", "Kafka", "Linux", "Numpy", "Pandas", "MATLAB"],
-#         "Machine Learning": ["Scikit-Learn", "Multivariate Statistics", "Supervised/Unsupervised Learning", "Bayesian Models"],
-#         "Deep Learning and AI": ["TensorFlow", "Keras", "PyTorch", "NLP", "CNN", "GPT-3"],
-#         "Web Development": ["Flask", "Streamlit", "FastAPI", "Node.js", "React.js", "Nginx", "Gunicorn"],
-#         "Cloud and Data Technologies": ["AWS", "GCP", "Azure", "Snowflake", "Hadoop", "Databricks"],
-#         "Data Visualization and Analysis": ["PowerBI", "Tableau", "ChartJS", "Grafana Labs", "MS Excel"]
-#     }
-    
-#     # Transforming the dictionary into a DataFrame
-#     data = [{"Category": category, "Skills": ", ".join(skills)} for category, skills in skills_categories.items()]
-#     df = pd.DataFrame(data)
-
-#     # Displaying the DataFrame as a table
-#     st.table(df)
 
 def display_skills():
     st.subheader('Skills')
@@ -296,35 +180,6 @@ def display_summary():
     diligence and commitment to excellence in both my coursework and professional work. I am eager to continue 
     this level of performance in future projects, utilizing diverse models, frameworks, and data.
     ''')
-
-# def display_summary():
-#     # Custom CSS for centering
-#     st.markdown("""
-#     <style>
-#     .centered {
-#         text-align: center;
-#     }
-#     </style>
-#     """, unsafe_allow_html=True)
-
-#     # Center the summary
-#     col1, col2, col3 = st.columns([1,2,1])
-#     with col2:
-#         st.markdown('<div class="centered">', unsafe_allow_html=True)
-#         st.subheader('Summary')
-#         st.markdown("""
-#             **HAVE YOU TRIED TURNING IT OFF AND ON AGAIN?**
-#             """)
-#         st.info('''
-#         I am a highly accomplished data scientist with a strong focus on achieving measurable results. 
-#         I possess extensive experience working within cross-functional teams to achieve organizational objectives. 
-#         Being highly motivated to innovate existing business processes, I achieve optimal results in an efficient and 
-#         cost-effective manner utilizing my in-depth domain expertise. I have consistently demonstrated exceptional 
-#         diligence and commitment to excellence in both my coursework and professional work. I am eager to continue 
-#         this level of performance in future projects, utilizing diverse models, frameworks, and data.
-#         ''')
-#         st.markdown('</div>', unsafe_allow_html=True)
-
 
 def display_projects():
     st.subheader('Projects')
@@ -498,8 +353,37 @@ def display_footer():
     footer_html += "</div><div>© 2024 Rishabh Indoria</div></div>"
     st.markdown(footer_html, unsafe_allow_html=True)
 
+def display_navigation_header():
+    st.markdown("""
+        <style>
+        .nav-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            z-index: 1000;
+        }
+        .nav-header a {
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        </style>
+        <div class="nav-header">
+            <a href="#header-and-education">Home</a>
+            <a href="#summary">Summary</a>
+            <a href="#career-snapshot">Career Snapshot</a>
+            <a href="#skills">Skills</a>
+            <a href="#work-experience">Work Experience</a>
+            <a href="#projects">Projects</a>
+        </div>
+    """, unsafe_allow_html=True)
+
 
 if __name__ == "__main__":
+    display_navigation_header()
     display_header_and_education()
     st.markdown("---")
     display_summary()
