@@ -367,10 +367,22 @@ def display_footer():
     footer_html += "<div>© 2024 Rishabh Indoria</div>"
     footer_html += "</div>"
     st.markdown(footer_html, unsafe_allow_html=True)
+def typewriter(text: str, speed: int):
+    tokens = text.split()
+    container = st.empty()
+    for index in range(len(tokens) + 1):
+        curr_full_text = " ".join(tokens[:index])
+        container.markdown(curr_full_text)
+        time.sleep(1 / speed)
 
+#Sample Example
+text = "This is an example of streamlit text with typewriter effect :)"
+speed = 10
+typewriter(text=text, speed=speed)
 
 if __name__ == "__main__":
     display_header_and_education()
+    typewriter()
     st.markdown("---")
     display_summary()
     st.markdown("---")
