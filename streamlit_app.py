@@ -27,7 +27,24 @@ def display_header_and_education():
     with col2:
         profile_pic = PROFILE_PIC_PATH
         st.image(profile_pic, width=150)
-        typewriter_effect("Rishabh Indoria ~~THE IT CROWD~~")
+        # Typewriter effect style
+        st.markdown("""
+        <style>
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        .typewriter {
+            animation: typewriter 4s steps(44) 1s 1 normal both,
+                       blinkTextCursor 500ms steps(44) infinite normal;
+        }
+        @keyframes blinkTextCursor {
+            from { border-right-color: rgba(255,255,255,.75); }
+            to { border-right-color: transparent; }
+        }
+        </style>
+        """, unsafe_allow_html=True)
+        st.markdown('<h1 class="typewriter">Rishabh Indoria ~~THE IT CROWD~~</h1>', unsafe_allow_html=True)
         # st.title("Rishabh Indoria ~~THE IT CROWD~~")
         # st.download_button(
         #     label="Download Resume",
