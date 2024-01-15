@@ -460,6 +460,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Define social media links, copyright text, and styling with Streamlit's info blue hue
 SOCIAL_MEDIA_FOOTER = {
     "LinkedIn": "https://linkedin.com/in/rishabhindoria/",
     "GitHub": "https://github.com/rishabhindoria25",
@@ -473,8 +474,8 @@ FOOTER_STYLE = """
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #007bff;  # Blue hue background color
-    color: white;  # Adjust text color for better visibility
+    background-color: #1f77b4;  # Streamlit's info blue color
+    color: white;  # White text color for better visibility
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -498,28 +499,16 @@ def display_footer():
     st.markdown(footer_html, unsafe_allow_html=True)
 
 
-
 if __name__ == "__main__":
-    # create_navbar()
     display_header_and_education()
     st.markdown("---")
-    # display_social_media_links()
-    # st.markdown("---")
     display_summary()
     st.markdown("---")
     display_career_snapshot()
     st.markdown("---")
     display_skills()
-    # st.markdown("---")
-    # display_education()
     st.markdown("---")
     display_work_experience()
     st.markdown("---")
     display_projects()
-    st.markdown("---")
     display_footer()
-    
-
-    # # Footer
-    # st.markdown("---")
-    
