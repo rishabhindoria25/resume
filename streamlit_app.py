@@ -25,12 +25,12 @@ def display_header_and_education():
         profile_pic = PROFILE_PIC_PATH
         st.image(profile_pic, width=150)
         st.title("Rishabh Indoria ~~THE IT CROWD~~")
-        st.download_button(
-            label="Download Resume",
-            data=read_file(RESUME_FILE),
-            file_name=RESUME_FILE,
-            mime="application/pdf",
-        )
+        # st.download_button(
+        #     label="Download Resume",
+        #     data=read_file(RESUME_FILE),
+        #     file_name=RESUME_FILE,
+        #     mime="application/pdf",
+        # )
 
     with col4:
         st.markdown("""
@@ -64,6 +64,12 @@ def display_header_and_education():
             </ul>
         </div>
         """, unsafe_allow_html=True)
+        st.download_button(
+            label="Download Resume",
+            data=read_file(RESUME_FILE),
+            file_name=RESUME_FILE,
+            mime="application/pdf",
+        )
 
 def display_social_media_links():
     st.subheader('Social Media')
