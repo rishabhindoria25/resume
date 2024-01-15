@@ -44,22 +44,39 @@ def display_header_and_education():
         </style>
         """, unsafe_allow_html=True)
 
+        # st.markdown("""
+        # <div class="education-info">
+        #     <ul>
+        #         <li>
+        #             <span class="institution">Northeastern University, Boston, Massachusetts</span><br>
+        #             <span class="degree">Masters of Science (Information Systems)</span><br>
+        #             [I did a cool presentation at AI Skunkworks](https://www.youtube.com/watch?v=Cf98HE5PRPk)
+        #         </li>
+        #         <li>
+        #             <span class="institution">Manipal Institute of Technology, Manipal, India</span><br>
+        #             <span class="degree">Bachelors of Technology (Information Technology)</span><br>
+        #             [Research Project under Dr. Ajitha Shenoy](#ResearchProject)
+        #         </li>
+        #     </ul>
+        # </div>
+        # """, unsafe_allow_html=True)
         st.markdown("""
         <div class="education-info">
             <ul>
                 <li>
                     <span class="institution">Northeastern University, Boston, Massachusetts</span><br>
                     <span class="degree">Masters of Science (Information Systems)</span><br>
-                    [I did a cool presentation at AI Skunkworks](https://www.youtube.com/watch?v=Cf98HE5PRPk)
+                    <a href="https://www.youtube.com/watch?v=Cf98HE5PRPk">I did a cool presentation at AI Skunkworks!</a>
                 </li>
                 <li>
                     <span class="institution">Manipal Institute of Technology, Manipal, India</span><br>
                     <span class="degree">Bachelors of Technology (Information Technology)</span><br>
-                    [Research Project under Dr. Ajitha Shenoy](#ResearchProject)
+                    <a href="#ResearchProject">Research Project under Dr. Ajitha Shenoy</a>
                 </li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
+
         st.download_button(
             label="Download Resume",
             data=read_file(RESUME_FILE),
