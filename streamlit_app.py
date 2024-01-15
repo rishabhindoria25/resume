@@ -51,7 +51,7 @@ def display_header_and_education():
                     <span class="institution">Northeastern University, Boston, Massachusetts</span><br>
                     <span class="degree">Masters of Science (Information Systems)</span><br>
                     Graduate TA - INFO 7390 Advance Data Sciences<br>
-                    <a href="https://portal.bloombergforeducation.com/certificates/Ge3MctSLAcGvYc4aPnR7r92j">Bloomberg Market Concepts Certification</a>
+                    <a href="https://portal.bloombergforeducation.com/certificates/Ge3MctSLAcGvYc4aPnR7r92j">Bloomberg Market Concepts Certification</a><br>
                     <a href="https://www.youtube.com/watch?v=Cf98HE5PRPk">I did a cool presentation at AI Skunkworks!</a>
                 </li>
                 <li>
