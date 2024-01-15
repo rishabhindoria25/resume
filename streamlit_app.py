@@ -19,7 +19,6 @@ def read_file(file_path):
         return file.read()
 
 def display_header_and_education():
-    st.markdown('<div id="header-and-education"></div>', unsafe_allow_html=True)
     col1, col2, col3, col4, col5 = st.columns([1, 2, 1, 2, 1])
 
     with col2:
@@ -34,7 +33,6 @@ def display_header_and_education():
         )
 
     with col4:
-        # st.subheader('Education')
         st.markdown("""
         <style>
         .education-info {
@@ -354,37 +352,8 @@ def display_footer():
     footer_html += "</div><div>© 2024 Rishabh Indoria</div></div>"
     st.markdown(footer_html, unsafe_allow_html=True)
 
-def display_navigation_header():
-    st.markdown("""
-        <style>
-        .nav-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #ffffff;
-            z-index: 1000;
-        }
-        .nav-header a {
-            padding: 10px;
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-        }
-        </style>
-        <div class="nav-header">
-            <a href="#header-and-education">Home</a>
-            <a href="#summary">Summary</a>
-            <a href="#career-snapshot">Career Snapshot</a>
-            <a href="#skills">Skills</a>
-            <a href="#work-experience">Work Experience</a>
-            <a href="#projects">Projects</a>
-        </div>
-    """, unsafe_allow_html=True)
-
 
 if __name__ == "__main__":
-    display_navigation_header()
     display_header_and_education()
     st.markdown("---")
     display_summary()
