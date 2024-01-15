@@ -71,7 +71,7 @@ def display_header_and_education():
                 <li>
                     <span class="institution">Manipal Institute of Technology, Manipal, India</span><br>
                     <span class="degree">Bachelors of Technology (Information Technology)</span><br>
-                    <a href="#ResearchProject">Research Project under Dr. Ajitha Shenoy</a>
+                    <a href="ResearchProject">Research Project under Dr. Ajitha Shenoy</a>
                 </li>
             </ul>
         </div>
