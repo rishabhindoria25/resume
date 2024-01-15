@@ -3,6 +3,8 @@ from PIL import Image
 from streamlit_timeline import timeline
 import pandas as pd
 import time
+
+
 # Constants
 PROFILE_PIC_PATH = Image.open('dp.png')
 RESUME_FILE = "RishabhIndoria_Resume.pdf"
@@ -25,7 +27,8 @@ def display_header_and_education():
     with col2:
         profile_pic = PROFILE_PIC_PATH
         st.image(profile_pic, width=150)
-        st.title("Rishabh Indoria ~~THE IT CROWD~~")
+        typewriter_effect("Rishabh Indoria ~~THE IT CROWD~~")
+        # st.title("Rishabh Indoria ~~THE IT CROWD~~")
         # st.download_button(
         #     label="Download Resume",
         #     data=read_file(RESUME_FILE),
@@ -368,22 +371,43 @@ def display_footer():
     footer_html += "<div>© 2024 Rishabh Indoria</div>"
     footer_html += "</div>"
     st.markdown(footer_html, unsafe_allow_html=True)
-def typewriter(text: str, speed: int):
-    tokens = text.split()
-    container = st.empty()
-    for index in range(len(tokens) + 1):
-        curr_full_text = " ".join(tokens[:index])
-        container.markdown(curr_full_text)
-        time.sleep(1 / speed)
 
-#Sample Example
-text = "This is an example of streamlit text with typewriter effect :)"
-speed = 10
-typewriter(text=text, speed=speed)
+def typewriter_effect(text):
+    # CSS for typewriter effect
+    typewriter_css = """
+    <style>
+    @keyframes typewriter {
+        from { width: 0; }
+        to { width: 100%; }
+    }
 
+    @keyframes blinkTextCursor {
+        from { border-right-color: rgba(255,255,255,.75); }
+        to { border-right-color: transparent; }
+    }
+
+    .typewriter h1 {
+        font-family: monospace;
+        overflow: hidden;
+        border-right: .15em solid orange;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: 
+            typewriter 4s steps(40) 1s 1 normal both,
+            blinkTextCursor 500ms steps(40) infinite normal;
+    }
+    </style>
+    """
+
+    # Embed the CSS with the typewriter effect
+    st.markdown(typewriter_css, unsafe_allow_html=True)
+
+    # Apply the typewriter class to the specified text
+    st.markdown(f'<h1 class="typewriter">{text}</h1>', unsafe_allow_html=True)
+    
 if __name__ == "__main__":
     display_header_and_education()
-    typewriter()
     st.markdown("---")
     display_summary()
     st.markdown("---")
