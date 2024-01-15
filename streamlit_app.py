@@ -50,13 +50,12 @@ def display_header_and_education():
                 <li>
                     <span class="institution">Northeastern University, Boston, Massachusetts</span><br>
                     <span class="degree">Masters of Science (Information Systems)</span><br>
-                    2022 - 2024<br>
-                    GPA: 3.75
+                    [I did a cool presentation at AI Skunkworks](https://www.youtube.com/watch?v=Cf98HE5PRPk)
                 </li>
                 <li>
                     <span class="institution">Manipal Institute of Technology, Manipal, India</span><br>
                     <span class="degree">Bachelors of Technology (Information Technology)</span><br>
-                    2013 - 2017
+                    [Research Project under Dr. Ajitha Shenoy](#ResearchProject)
                 </li>
             </ul>
         </div>
@@ -298,8 +297,9 @@ def display_projects():
         """)
 
     # Project 11 - QueryVision
-    with st.expander("QueryVision, under Dr. Ajitha Shenoy"):
+    with st.expander("QueryVision"):
         st.markdown("""
+        <a name='ResearchProject'></a>
         June 2017
         """)
         st.markdown("""
