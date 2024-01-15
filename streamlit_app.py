@@ -27,32 +27,8 @@ def display_header_and_education():
     with col2:
         profile_pic = PROFILE_PIC_PATH
         st.image(profile_pic, width=150)
-        # Typewriter effect style
-        st.markdown("""
-        <style>
-        @keyframes typewriter {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        .typewriter {
-            animation: typewriter 4s steps(44) 1s 1 normal both,
-                       blinkTextCursor 500ms steps(44) infinite normal;
-        }
-        @keyframes blinkTextCursor {
-            from { border-right-color: rgba(255,255,255,.75); }
-            to { border-right-color: transparent; }
-        }
-        </style>
-        """, unsafe_allow_html=True)
-        st.markdown('<h1 class="typewriter">Rishabh Indoria ~~THE IT CROWD~~</h1>', unsafe_allow_html=True)
-        # st.title("Rishabh Indoria ~~THE IT CROWD~~")
-        # st.download_button(
-        #     label="Download Resume",
-        #     data=read_file(RESUME_FILE),
-        #     file_name=RESUME_FILE,
-        #     mime="application/pdf",
-        # )
-
+        st.title("Rishabh Indoria ~~THE IT CROWD~~")
+        
     with col4:
         st.markdown("""
         <style>
@@ -370,14 +346,6 @@ FOOTER_STYLE = """
 </style>
 """
 
-# Function to display footer with social media links and copyright text
-# def display_footer():
-#     st.markdown(FOOTER_STYLE, unsafe_allow_html=True)
-#     footer_html = "<div class='footer'><div>"
-#     for platform, link in SOCIAL_MEDIA_FOOTER.items():
-#         footer_html += f"<a href='{link}'>{platform}</a>"
-#     footer_html += "</div><div>© 2024 Rishabh Indoria</div></div>"
-#     st.markdown(footer_html, unsafe_allow_html=True)
 def display_footer():
     st.markdown(FOOTER_STYLE, unsafe_allow_html=True)
     footer_html = "<div class='footer' style='display: flex; justify-content: space-between; align-items: center;'>"
@@ -388,40 +356,6 @@ def display_footer():
     footer_html += "<div>© 2024 Rishabh Indoria</div>"
     footer_html += "</div>"
     st.markdown(footer_html, unsafe_allow_html=True)
-
-def typewriter_effect(text):
-    # CSS for typewriter effect
-    typewriter_css = """
-    <style>
-    @keyframes typewriter {
-        from { width: 0; }
-        to { width: 100%; }
-    }
-
-    @keyframes blinkTextCursor {
-        from { border-right-color: rgba(255,255,255,.75); }
-        to { border-right-color: transparent; }
-    }
-
-    .typewriter h1 {
-        font-family: monospace;
-        overflow: hidden;
-        border-right: .15em solid orange;
-        white-space: nowrap;
-        margin: 0 auto;
-        letter-spacing: .15em;
-        animation: 
-            typewriter 4s steps(40) 1s 1 normal both,
-            blinkTextCursor 500ms steps(40) infinite normal;
-    }
-    </style>
-    """
-
-    # Embed the CSS with the typewriter effect
-    st.markdown(typewriter_css, unsafe_allow_html=True)
-
-    # Apply the typewriter class to the specified text
-    st.markdown(f'<h1 class="typewriter">{text}</h1>', unsafe_allow_html=True)
     
 if __name__ == "__main__":
     display_header_and_education()
