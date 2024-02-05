@@ -77,5 +77,18 @@
 			"headline": "Conducted a workshop",
 			"text": "Presented at AI Skunkworks' 'Generative AI Deep Dive' in partnership with the Institute for Experiential AI (<a href='https://www.youtube.com/watch?v=Cf98HE5PRPk'>Watch Video</a>)"		
 		}
+	}, {
+		"start_date": {
+			"year": "2024",
+			"month": "2"
+		},
+		"media": {
+			"url": "https://learn.microsoft.com/en-us/users/rishabhindoria-5834/credentials/e9c3d93e5b13053f",
+			"credit": "Microsoft"
+		},
+		"text": {
+			"headline": "Got Microsoft certified",
+			"text": "Microsoft Certified: Azure Data Scientist Associate"		
+		}
 	}]
 }
