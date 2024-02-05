@@ -51,6 +51,7 @@ def display_header_and_education():
                     <span class="institution">Northeastern University, Boston, Massachusetts</span><br>
                     <span class="degree">Masters of Science (Information Systems)</span><br>
                     Graduate TA - INFO 7390 Advance Data Sciences<br>
+                    <a href="https://learn.microsoft.com/en-us/users/rishabhindoria-5834/credentials/e9c3d93e5b13053f">Microsoft Certified: Azure Data Scientist Associate</a><br>
                     <a href="https://portal.bloombergforeducation.com/certificates/Ge3MctSLAcGvYc4aPnR7r92j">Bloomberg Market Concepts Certification</a><br>
                     <a href="https://www.youtube.com/watch?v=Cf98HE5PRPk">I did a cool presentation at AI Skunkworks!</a>
                 </li>
