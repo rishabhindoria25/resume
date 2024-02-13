@@ -7,7 +7,7 @@ import time
 
 # Constants
 PROFILE_PIC_PATH = Image.open('dp.png')
-RESUME_FILE = "RishabhIndoria_Resume.pdf"
+RESUME_FILE = "RishabhIndoria_Resume"
 EMAIL = "indoria.r@northeastern.edu"
 
 
