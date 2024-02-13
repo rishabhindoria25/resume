@@ -149,7 +149,7 @@ def display_work_experience():
     # Experience 1 - Lead Data Scientist at Urja.io
     with st.expander("URJA.IO"):
         st.markdown("""
-        Lead Data Scientist (February 2021 - August 2022)
+        Lead Data Scientist (April 2020 - August 2022)
         """)
         st.markdown("""
         - Spearheaded development team in creating an end-to-end analytical dashboard tool, resulting in a 25% increase in user retention.
