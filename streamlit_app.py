@@ -197,7 +197,7 @@ def display_projects():
         st.markdown("""
         - Enhanced prediction accuracy in an imbalanced dataset using SMOTE, class weight adjustments, and optimizer tuning.
         - Developed and trained ConvLSTM Model for Rainfall Forecasting, achieving 77% Class-1 Accuracy.
-        [Project Link](https://github.com/rishabhindoria25/Imbalanced_Meteorological_Data_Analysis)
+        [Project Link](https://github.com/NeuraNoir/Imbalanced-Meteorological-Data-Analysis-For-Rainfall-Prediction)
         """)
 
     # Project 2 - Biomedical Text Tagging Using BioBert
@@ -230,7 +230,7 @@ def display_projects():
         st.markdown("""
         - Implemented CNN with PyTorch and OpenCV for efficient image segmentation with F1-Score of 0.92.
         - Developed RNN in TensorFlow and NLTK for generating context-aware captions from segmented data with 70 Perplexity score.
-        [Project Link](https://github.com/rishabhindoria25/Image_Segmentation)
+        [Project Link](https://github.com/NeuraNoir/Image-segmentation-with-contextual-captioning)
         """)
 
     # Project 4 - Enhanced Audio Journaling with LLM
@@ -242,7 +242,7 @@ def display_projects():
         - Implemented containerized audio processing algorithms, focusing on emotion detection for accurate sentiment analysis.
         - Leveraged Snowflake for efficient and scalable data storage.
         - Utilized GPT-3.5 prompt engineering for generating personalized feedback.
-        [Project Link](https://github.com/rishabhindoria25/Enhanced_Audio_Journaling)
+        [Project Link](https://github.com/ImagiGEN/AudioJournaling)
         """)
 
     # Project 5 - Finance Search Optimization
@@ -254,7 +254,7 @@ def display_projects():
         - Engineered a Q&A and text summarization platform, ingesting financial transcripts from Kafka pub-sub.
         - Used Langchain traditional filters, RAG, and Pinecone for vector similarity.
         - Dockerized Airflow data pipelines and Spark processing strategies.
-        [Project Link](https://github.com/rishabhindoria25/Finance_Search_Optimization)
+        [Project Link](https://github.com/ImagiGEN/contextualQ-A)
         """)
 
     # Project 6 - Sentiment Analysis: Deciphering Restaurant Reviews
