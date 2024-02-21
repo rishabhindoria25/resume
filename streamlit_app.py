@@ -145,16 +145,28 @@ def display_skills():
 
 def display_work_experience():
     st.subheader('Work Experience')
-
+    
+    # Experience 1 - Lead Data Scientist at Urja.io
+    with st.expander("Next Quarter"):
+        st.markdown("""
+        AI developer Intern (February 2024 - Present)
+        """)
+        st.markdown("""
+        - Delivered an Artificial Intelligent solution for account-planning and price predictive model, increasing client's earnings potential by 23% and enhancing sales forecast accuracy by 20% through predictive growth strategy forecasting and effective trend analysis.
+        - Proposed an automated risk management LLM framework POC, achieving a 37% increase in clients’ customer engagement.
+        """)
+        
     # Experience 1 - Lead Data Scientist at Urja.io
     with st.expander("URJA.IO"):
         st.markdown("""
         Lead Data Scientist (April 2020 - August 2022)
         """)
         st.markdown("""
-        - Spearheaded development team in creating an end-to-end analytical dashboard tool, resulting in a 25% increase in user retention.
-        - Reduced costs by 23% with a 94% accurate machinery-failure prediction system using Facebook Prophet for forecasting.
-        - Streamlined stakeholder communication by 10 hours weekly through efficient Tableau reporting of A/B test progress.
+        - Spearheaded ML Ops team in creating an end-to-end analytical IoT dashboard tool, resulting in a 25% increase in user experience
+        - Reduced costs by 23% with a 94% accurate machinery-failure prediction system using Prophet for IoT time-series forecasting
+        - Streamlined stakeholder decision making by 10 hours biweekly through efficient Tableau reporting of A/B test progress
+        - Contributed to SAFe Agile roadmap planning by collaborating with cross-functional teams to implement product strategies
+        - Saved $100,000 by leading data-driven business solutions and monitoring product metrics to steer product innovation
         """)
 
     # Experience 2 - Data Scientist at Societe Generale Global Solution Centre
